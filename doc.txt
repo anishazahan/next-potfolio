@@ -1,0 +1,4 @@
+ -------- for authentication------------
+
+ 1.install = npm install next-auth
+ 2.

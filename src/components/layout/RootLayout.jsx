@@ -1,17 +1,18 @@
-import Footer from "@/shared/Footer/Footer"
-import Navbar from "@/shared/Navbar/Navbar"
+import Footer from "@/shared/Footer/Footer";
+import Navbar from "@/shared/Navbar/Navbar";
+import { useTheme } from "next-themes";
 
+import { useState } from "react";
 
-const RootLayout = ({children}) => {
+const RootLayout = ({ children }) => {
+  const { theme } = useTheme();
   return (
-    <>
-    <Navbar></Navbar>
-    <div  className="h-[60vh]">
-    {children}
+    <div className={`dark:bg-gray-900 ${theme === "dark" ? "dark" : ""}`}>
+      <Navbar></Navbar>
+      <div className={`theme-${theme} h-[70vh]`}>{children}</div>
+      <Footer></Footer>
     </div>
-     <Footer></Footer>
-    </>
-  )
-}
+  );
+};
 
-export default RootLayout
+export default RootLayout;

@@ -4,6 +4,33 @@
 
 
 .custom-container {
-    @apply px-5 lg:px-10  max-w-7xl mx-auto;
-  }
-  
+  @apply px-10 max-w-7xl mx-auto;
+}
+
+
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 1px solid gray;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.cursor2 {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border: 1px solid gray;
+  background-color: black;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
