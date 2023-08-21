@@ -7,9 +7,9 @@ import { useState } from "react";
 const RootLayout = ({ children }) => {
   const { theme } = useTheme();
   return (
-    <div className={`dark:bg-gray-900 ${theme === "dark" ? "dark" : ""}`}>
+    <div className={`dark:bg-gray-800 ${theme === "dark" ? "dark" : ""}`}>
       <Navbar></Navbar>
-      <div className={`theme-${theme} h-[70vh]`}>{children}</div>
+      <div className={`theme-${theme}`}>{children}</div>
       <Footer></Footer>
     </div>
   );

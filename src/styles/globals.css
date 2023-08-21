@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+body {
+
+  font-family: 'Outfit', sans-serif;
+}
+
+h2,
+h1,
+h3 {
+  font-family: 'Heebo', sans-serif;
+
+}
+
+
 
 .custom-container {
   @apply px-5 md:px-10 max-w-7xl mx-auto;
@@ -44,3 +59,13 @@
   font-size: 36px;
   font-weight: bold;
 } */
+
+
+.text-stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(128, 128, 128, 0.266);
+}
+
+.text-transparent-stroke {
+  -webkit-text-fill-color: transparent;
+}

@@ -7,6 +7,7 @@ import { useTheme } from "next-themes";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import Image from "next/image";
 import { useSession, signOut } from "next-auth/react";
+import Banner from "@/components/Home/Banner";
 
 const Navbar = () => {
   const router = useRouter();
@@ -22,8 +23,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar-bg dark:bg-black drop-shadow mb-10">
-        <nav className=" z-10 custom-container py-4 flex justify-between  items-center ">
+      <div className="navbar-bg dark:bg-black mb-10">
+        <nav className=" z-10 custom-container py-4  flex justify-between  items-center ">
           <Link href="/" className="flex items-center space-x-2">
             {/* <Image width={50}  src={img2} alt="" />
            <Image width={180}  src={img1} alt="" /> */}
@@ -299,6 +300,8 @@ const Navbar = () => {
             </nav>
           </div>
         )}
+
+        <Banner></Banner>
       </div>
     </>
   );
