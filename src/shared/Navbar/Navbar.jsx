@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar-bg dark:bg-black mb-10">
+      <div className="navbar-bg dark:bg-gray-900 mb-10">
         <nav className=" z-10 custom-container py-4  flex justify-between  items-center ">
           <Link href="/" className="flex items-center space-x-2">
             {/* <Image width={50}  src={img2} alt="" />
