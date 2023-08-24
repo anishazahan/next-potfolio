@@ -6,7 +6,7 @@ import { TbBrandRedux, TbBrandTypescript } from "react-icons/tb";
 
 const ExpertData = () => {
   return (
-    <div className=" mt-10">
+    <div className=" mt-12">
       <div className="flex flex-wrap items-center gap-6">
         <div className="border px-10 py-5 dark:border-primary dark:bg-gray-900 border-opacity-70 shadow hover:border-opacity-100 text-center">
           <button className="text-6xl text-primary font-bold">
