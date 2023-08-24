@@ -1,11 +1,11 @@
 import Link from "next/link";
-import img from "../../assets/img/Group 354.png";
+import img from "../../assets/img/Group 369.png";
 import Image from "next/image";
 
 const HomeBanner = () => {
   return (
     <div className="custom-container pt-24 pb-32">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-center text-center items-center">
         <div className="">
           <h2 className="dark:text-gray-200 font-semibold mb-3">
             Hey, I am Anisha Zahan Hashi{" "}
@@ -33,9 +33,15 @@ const HomeBanner = () => {
             </Link>
           </div>
         </div>
-        <div className="">
-          <Image width="0" height="0" className="w-full" src={img} alt="" />
-        </div>
+        {/* <div className="w-[50%]">
+          <Image
+            width="0"
+            height="0"
+            className="w-full h-full"
+            src={img}
+            alt=""
+          />
+        </div> */}
       </div>
     </div>
   );

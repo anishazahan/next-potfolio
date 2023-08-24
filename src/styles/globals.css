@@ -69,3 +69,11 @@ h3 {
 .text-transparent-stroke {
   -webkit-text-fill-color: transparent;
 }
+
+
+.navbar_bg {
+  background: url("../assets/img/Group 357.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

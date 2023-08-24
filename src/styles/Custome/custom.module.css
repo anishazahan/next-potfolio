@@ -82,3 +82,20 @@
 .learn_more:hover .button-text {
     color: black;
 }
+
+
+.navbar_dark_bg {
+    background: url("../../assets/img/Group 361.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
+
+.navbar_light_bg {
+    background: url("../../assets/img/Group 360.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
