@@ -2,8 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['i.ibb.co', 'cdn.pixabay.com',"i.pcmag.com"],
+    domains: ["i.ibb.co", "cdn.pixabay.com", "i.pcmag.com"],
   },
-}
+  devIndicators: {
+    buildActivity: false,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

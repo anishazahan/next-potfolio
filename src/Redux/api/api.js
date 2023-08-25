@@ -1,16 +1,11 @@
-
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-
 export const All_Api = createApi({
- 
   reducerPath: "api",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5000/api/project" }),
-
-  endpoints: () => ({
-
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://next-portfolio-server.vercel.app/api/project",
   }),
-  tagTypes:[''],
+
+  endpoints: () => ({}),
+  tagTypes: [""],
 });
-
-

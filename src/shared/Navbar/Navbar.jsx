@@ -10,6 +10,8 @@ import Image from "next/image";
 import { useSession, signOut } from "next-auth/react";
 import Banner from "@/components/Home/Banner";
 import styles from "../../styles/Custome/custom.module.css";
+import darkLogo from "../../assets/img/Group 381.png";
+import lightLogo from "../../assets/img/Group 379.png";
 
 const Navbar = () => {
   const router = useRouter();
@@ -24,17 +26,27 @@ const Navbar = () => {
   };
 
   const navbarBgClass =
-    theme === "dark" ? styles.navbar_dark_bg : styles.navbar_light_bg;
+    theme === "dark"
+      ? styles.navbar_dark_bg
+      : theme === "light"
+      ? styles.navbar_light_bg
+      : styles.navbar_dark_bg;
 
   return (
     <div className="bg-black/75">
       <div className={navbarBgClass}>
         <div className="shadow">
           <nav className=" z-10 custom-container py-4  flex justify-between  items-center ">
-            <Link href="/" className="flex items-center space-x-2">
-              {/* <Image width={50}  src={img2} alt="" />
-           <Image width={180}  src={img1} alt="" /> */}
-              <div className="flex items-center space-x-0">
+            <Link href="/" className="flex items-center">
+              {theme === "dark" ? (
+                <Image width="" height="" src={darkLogo} alt="" />
+              ) : theme === "light" ? (
+                <Image width="" height="" src={lightLogo} alt="" />
+              ) : (
+                <Image width="" height="" src={darkLogo} alt="" />
+              )}
+
+              {/* <div className="flex items-center space-x-0">
                 <button className="text-3xl text-primary">
                   {" "}
                   <BiSolidChevronLeft></BiSolidChevronLeft>
@@ -46,7 +58,7 @@ const Navbar = () => {
                   {" "}
                   <BiSolidChevronRight></BiSolidChevronRight>
                 </button>
-              </div>
+              </div> */}
             </Link>
 
             <div className="hidden  lg:flex  lg:items-center lg:space-x-6">
@@ -64,9 +76,9 @@ const Navbar = () => {
               </Link>
 
               <Link
-                href="/"
+                href="/About"
                 className={`font-semibold ${
-                  router.pathname === "/about"
+                  router.pathname === "/About"
                     ? "text-primary"
                     : "dark:text-gray-200 text-zinc-950 "
                 }`}
@@ -77,7 +89,7 @@ const Navbar = () => {
               <Link
                 href="/"
                 className={`font-semibold ${
-                  router.pathname === "/services"
+                  router.pathname === "/service"
                     ? "text-primary"
                     : "dark:text-gray-200 text-zinc-950 "
                 }`}
@@ -221,12 +233,18 @@ const Navbar = () => {
 
         {isMenuOpen && (
           <div className=" navbar-menu relative z-50 lg:hidden">
-            <div className=" fixed inset-0 dark:bg-gray-800 bg-gray-100 "></div>
+            <div className=" fixed inset-0 dark:bg-gray-800 bg-purple-100 "></div>
             <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 dark:bg-zinc-900 bg-gray-300 border-r overflow-y-auto">
-              <div className="flex items-center mb-8">
-                <a className="mr-auto text-3xl font-bold leading-none" href="#">
-                  <h1 className="dark:text-white text-black">logo</h1>
-                </a>
+              <div className="flex items-center justify-between mb-8">
+                <Link href="/" className="flex items-center">
+                  {theme === "dark" ? (
+                    <Image width="" height="" src={darkLogo} alt="" />
+                  ) : theme === "light" ? (
+                    <Image width="" height="" src={lightLogo} alt="" />
+                  ) : (
+                    <Image width="" height="" src={darkLogo} alt="" />
+                  )}
+                </Link>
                 <button
                   onClick={() => setIsMenuOpen(false)}
                   className="navbar-close"
@@ -263,7 +281,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                  href="/"
+                  href="/about"
                   className={`font-semibold ${
                     router.pathname === "/about"
                       ? "text-primary"
@@ -276,7 +294,7 @@ const Navbar = () => {
                 <Link
                   href="/"
                   className={`font-semibold ${
-                    router.pathname === "/services"
+                    router.pathname === "/service"
                       ? "text-primary"
                       : "dark:text-gray-200 text-zinc-950 "
                   }`}
@@ -285,7 +303,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                  href="/"
+                  href="/project"
                   className={`font-semibold ${
                     router.pathname === "/project"
                       ? "text-primary"
