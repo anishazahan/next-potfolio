@@ -33,7 +33,7 @@ const Navbar = () => {
       : "navbar_dark_bg;";
 
   return (
-    <div className={`bg-black/75 `}>
+    <div className={` bg-black/75`}>
       <div className={navbarBgClass}>
         <div className="shadow bg-gray-950">
           <nav className=" z-10 custom-container  py-5  flex justify-between  items-center ">

@@ -7,8 +7,7 @@ import ScrollToTopButton from "@/shared/ScrollToTopButton";
 const Home = () => {
   return (
     <>
-      {/* <Cursor></Cursor> */}
-
+      <Cursor></Cursor>
       <ScrollToTopButton />
       <HomePage></HomePage>
     </>
