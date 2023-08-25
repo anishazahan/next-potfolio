@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img from "../../assets/img/Group 354.png";
+import img from "../../assets/img/Group 376.png";
 import Link from "next/link";
 import styles from "../../styles/Custome/custom.module.css";
 import { FaChevronRight } from "react-icons/fa";
@@ -7,7 +7,7 @@ import { FaChevronRight } from "react-icons/fa";
 const About = () => {
   return (
     <div>
-      <div className="flex custom-container justify-between items-center pt-10 pb-32 space-x-14">
+      <div className="flex flex-col lg:flex-row custom-container justify-between items-center pt-10 pb-32 space-x-14">
         <div className=" w-full lg:w-[45%]">
           <Image width="0" height="0" className="w-full" src={img} alt="" />
         </div>

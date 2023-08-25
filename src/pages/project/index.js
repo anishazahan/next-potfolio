@@ -1,18 +1,15 @@
-
-
-
-import { useDeleteProjectMutation, useGetProjectQuery } from "@/Redux/features/projectApi";
+import {
+  useDeleteProjectMutation,
+  useGetProjectQuery,
+} from "@/Redux/features/projectApi";
 import Image from "next/image";
 import Link from "next/link";
 import UpdateProject from "./UpdateProject";
 
-
-
 const Project = () => {
-  const { data, isLoading, isError, error } = useGetProjectQuery(); 
+  const { data, isLoading, isError, error } = useGetProjectQuery();
   const [deleteProject, { isLoading: isDeleting }] = useDeleteProjectMutation();
   console.log("this is data", data?.data);
-  
 
   const handleDeleteProject = async (projectId) => {
     try {
@@ -24,19 +21,8 @@ const Project = () => {
   };
 
   return (
-    <div className='custom-container my-24'>
- 
-     {/* {
-        data?.data?.map((item,index)=> {
-          return <Link href={`/project/${item?._id}`} key={index} className="">
-              <Image  width={400} height={400} src={item.img} alt="" />
-              <button className="border">update</button>
-          </Link>
-        }  )
-      } */}
-   
-
-{data?.data?.map((item,index)=> {
+    <div className="custom-container my-24">
+      {data?.data?.map((item, index) => {
         return (
           <div key={index} className="">
             <Image width={400} height={400} src={item.img} alt="" />
@@ -53,11 +39,8 @@ const Project = () => {
           </div>
         );
       })}
-     
- 
-       
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

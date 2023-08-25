@@ -55,14 +55,6 @@ h3 {
 }
 
 
-/* .gradient-text {
-  background: linear-gradient(45deg, #5036E1, #801798);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 36px;
-  font-weight: bold;
-} */
 
 
 .text-stroke {
@@ -75,8 +67,14 @@ h3 {
 }
 
 
-.navbar_bg {
-  background: url("../assets/img/Group 357.png");
+.navbar_dark_bg {
+  background: url("../assets/img/Group 377.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.navbar_light_bg {
+  background: url("../assets/img/Group 377 (1).png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
