@@ -24,12 +24,12 @@ const data = [
 const Testimonial = () => {
   return (
     <div className="custom-container pb-24">
-      <div className="relative">
-        <h2 className="text-[80px] font-extrabold font-uppercase absolute left-0 -top-20">
-          <span className="text-stroke text-transparent-stroke">Review</span>
+      <div className="relative mb-4">
+        <h2 className="text-[70px] font-extrabold font-uppercase absolute left-0 -top-16">
+          <span className={`text-stroke-effect`} data-text="Review" />
         </h2>
 
-        <h2 className="text-3xl mb-7 font-bold dark:text-gray-200 mt-4">
+        <h2 className="text-3xl pl-0 mb-7 font-bold dark:text-gray-200 mt-4">
           My Client <span className="text-primary">Review</span>
         </h2>
       </div>

@@ -5,15 +5,16 @@ const Contact = () => {
     <div className="  pt-16 pb-32">
       {/* <!-- component --> */}
 
-      <div className="relative custom-container mb-4 ">
-        <h2 className="text-[50px] font-extrabold font-uppercase absolute left-0 px-9 -top-10">
-          <span className="text-stroke text-transparent-stroke">Contact</span>
-        </h2>
+      <div className="relative custom-container mb-4">
+      <h2 className="text-[50px] font-extrabold font-uppercase absolute left-0 px-9 -top-10">
+        <span className={`text-stroke-effect`} data-text="Contact" />
+      </h2>
 
-        <h2 className="text-3xl mb-7 font-bold dark:text-gray-200 mt-4">
-          Contact <span className="text-primary">Me</span>
-        </h2>
-      </div>
+      <h2 className="text-3xl contact-heading mb-7 font-bold dark:text-gray-200 mt-4">
+        Contact <span className="text-primary">Me</span>
+      </h2>
+    </div>
+
 
       <div className=" custom-container grid grid-cols-1 gap-4 md:grid-cols-2">
         <div

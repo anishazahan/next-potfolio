@@ -6,8 +6,8 @@ const TimeLine = () => {
       {/* <!-- component --> */}
 
       <div className="relative custom-container">
-        <h2 className="text-[60px] flex justify-center mx-auto text-center font-extrabold font-uppercase absolute left-0 right-0 -top-14">
-          <span className="text-stroke text-transparent-stroke">Chose Me</span>
+        <h2 className="text-[60px] flex justify-center mx-auto text-center font-extrabold font-uppercase absolute left-0 right-56 -top-14">
+          <span className={`text-stroke-effect`} data-text="ChoseMe" />
         </h2>
 
         <h2 className="text-3xl text-center mb-3 font-bold dark:text-gray-200 mt-4">
@@ -15,6 +15,7 @@ const TimeLine = () => {
         </h2>
         <div className="flex justify-center w-48 mb-8 h-[3px] bg-primary mx-auto"></div>
       </div>
+
       <div className=" custom-container pt-9 pb-16 mx-auto w-full h-full hidden lg:block">
         <div className="relative wrap overflow-hidden p-5 md:py-10 h-full">
           {/* <!-- right timeline --> */}

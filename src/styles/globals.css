@@ -55,16 +55,33 @@ h3 {
 }
 
 
-
-
-.text-stroke {
+/* .text-stroke {
   -webkit-text-strokeWidth: 1px;
   -webkit-text-stroke-color: rgba(128, 128, 128, 0.266);
+ 
 }
 
 .text-transparent-stroke {
   -webkit-text-fill-color: transparent;
+} */
+
+.text-stroke-effect {
+  position: relative;
 }
+
+.text-stroke-effect::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(128, 128, 128, 0.266);
+  color: transparent;
+}
+
+
+
 
 
 .navbar_dark_bg {

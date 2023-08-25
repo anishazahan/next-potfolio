@@ -18,9 +18,9 @@ const Services = () => {
 
   return (
     <div className="custom-container mb-24 mt-16">
-      <div className="relative">
-        <h2 className="text-[80px] font-extrabold font-uppercase absolute left-0 -top-20">
-          <span className="text-stroke text-transparent-stroke">Services</span>
+      <div className="relative mb-4">
+        <h2 className="text-[70px] font-extrabold font-uppercase absolute left-0 -top-16">
+          <span className={`text-stroke-effect`} data-text="Services" />
         </h2>
 
         <h2 className="text-3xl mb-5 font-bold dark:text-gray-200 mt-4">
@@ -31,6 +31,7 @@ const Services = () => {
           satisfied
         </p>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {data.map((item, index) => {
           const isDescriptionVisible = showFullDescriptions.includes(item.id);

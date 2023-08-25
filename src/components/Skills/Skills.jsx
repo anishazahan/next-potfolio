@@ -24,11 +24,12 @@ const Skills = () => {
 
   return (
     <div className="custom-container my-10 pb-20">
-      <div className="relative">
-        <h2 className="text-[80px] font-extrabold font-uppercase absolute left-0 -top-20">
-          <span className="text-stroke text-transparent-stroke">Skills</span>
+      <div className="relative mb-4">
+        <h2 className="text-[70px] font-extrabold font-uppercase absolute left-0 -top-16">
+          <span className={`text-stroke-effect`} data-text="Skills" />
         </h2>
-        <h2 className="text-3xl mb-7 font-bold dark:text-gray-200 mt-4">
+
+        <h2 className="text-3xl pl-0 mb-7 font-bold dark:text-gray-200 mt-4">
           My Technical <span className="text-primary">Skills</span>
         </h2>
       </div>
