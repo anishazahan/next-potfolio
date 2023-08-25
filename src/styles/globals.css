@@ -58,7 +58,7 @@ h3 {
 
 
 .text-stroke {
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-strokeWidth: 1px;
   -webkit-text-stroke-color: rgba(128, 128, 128, 0.266);
 }
 
@@ -72,10 +72,13 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin: auto;
 }
+
 .navbar_light_bg {
   background: url("../assets/img/Group 377 (1).png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin: auto;
 }

@@ -17,7 +17,7 @@ const Services = () => {
   };
 
   return (
-    <div className="custom-container my-16">
+    <div className="custom-container mb-24 mt-16">
       <div className="relative">
         <h2 className="text-[80px] font-extrabold font-uppercase absolute left-0 -top-20">
           <span className="text-stroke text-transparent-stroke">Services</span>
@@ -26,12 +26,12 @@ const Services = () => {
         <h2 className="text-3xl mb-5 font-bold dark:text-gray-200 mt-4">
           Provide Best <span className="text-primary">Services</span>
         </h2>
-        <p className="lg:max-w-lg dark:text-gray-200 text-gray-500 mb-12">
+        <p className="lg:max-w-lg dark:text-gray-200 text-gray-500 mb-16">
           You will get 100% full service of work assured until you are fully
           satisfied
         </p>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {data.map((item, index) => {
           const isDescriptionVisible = showFullDescriptions.includes(item.id);
 
@@ -40,10 +40,10 @@ const Services = () => {
               key={index}
               className={`  border-primary border-opacity-70 ${
                 item.id == 3
-                  ? "border-0"
+                  ? "md:border-0"
                   : item.id == 6
-                  ? "border-0"
-                  : "border-r"
+                  ? "md:border-0"
+                  : "md:border-r"
               }`}
             >
               <h2 className="text-xl border-opacity-60 border-primary dark:bg-gray-900 text-primary font-bold border w-10 h-10 flex items-center justify-center rounded-full">

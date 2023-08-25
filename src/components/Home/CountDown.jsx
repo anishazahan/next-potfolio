@@ -2,8 +2,8 @@ import React from "react";
 
 const CountDown = () => {
   return (
-    <div className="custom-container  ">
-      <div className="flex items-center py-20 justify-between flex-wrap dark:bg-black/60 bg-gray-900  rounded-3xl px-12">
+    <div className="custom-container mb-32 ">
+      <div className="flex gap-10 items-center py-20 justify-between flex-wrap dark:bg-black/60 bg-gray-900  rounded-3xl px-12">
         <div className="relative">
           <h2 className="text-[90px] font-extrabold italic font-uppercase absolute left-0 -top-10">
             <span className="text-stroke text-transparent-stroke skew-x-2">

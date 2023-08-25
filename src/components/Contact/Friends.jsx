@@ -8,7 +8,7 @@ import { SiUpwork } from "react-icons/si";
 
 const Friends = () => {
   return (
-    <div className="dark:bg-[rgba(49,53,82,0.25)] bg-gray-50 py-20">
+    <div className="dark:bg-[rgba(49,53,82,0.25)] bg-gray-50 pb-20">
       <div className="custom-container">
         <h2 className="text-sm tracking-wider text-primary font-semibold uppercase">
           Social Links
@@ -24,7 +24,7 @@ const Friends = () => {
         </div>
         {/* ..................  social tab........ */}
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
           <Link
             href="https://www.linkedin.com/in/anisha-zahan/"
             target="_blank"

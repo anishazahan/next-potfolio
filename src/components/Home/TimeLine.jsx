@@ -3,27 +3,19 @@ import React from "react";
 const TimeLine = () => {
   return (
     <>
-      {/* <div className="service text-center mb-10">
-        <h2 className=" servicing-heading text-3xl md:p-7  dark:text-gray-200">
-          Why you can Chose Me!!!
-        </h2>
-      </div> */}
-
       {/* <!-- component --> */}
-      <div className=" custom-container mx-auto w-full h-full hidden lg:block">
-        <div className="relative">
-          <h2 className="text-[60px] flex justify-center mx-auto text-center font-extrabold font-uppercase absolute left-0 right-0 -top-14">
-            <span className="text-stroke text-transparent-stroke">
-              Chose Me
-            </span>
-          </h2>
 
-          <h2 className="text-3xl text-center mb-3 font-bold dark:text-gray-200 mt-4">
-            Why you can Chose <span className="text-primary">Me!!!</span>
-          </h2>
-          <div className="flex justify-center w-48 mb-8 h-[3px] bg-primary mx-auto"></div>
-        </div>
+      <div className="relative custom-container">
+        <h2 className="text-[60px] flex justify-center mx-auto text-center font-extrabold font-uppercase absolute left-0 right-0 -top-14">
+          <span className="text-stroke text-transparent-stroke">Chose Me</span>
+        </h2>
 
+        <h2 className="text-3xl text-center mb-3 font-bold dark:text-gray-200 mt-4">
+          Why you can Chose <span className="text-primary">Me!!!</span>
+        </h2>
+        <div className="flex justify-center w-48 mb-8 h-[3px] bg-primary mx-auto"></div>
+      </div>
+      <div className=" custom-container pt-9 pb-16 mx-auto w-full h-full hidden lg:block">
         <div className="relative wrap overflow-hidden p-5 md:py-10 h-full">
           {/* <!-- right timeline --> */}
           <div className="mb-8 flex justify-between items-center w-full right-timeline">
@@ -116,18 +108,18 @@ const TimeLine = () => {
 
       {/* <!-- component -->  for medium device */}
       <div className="light:bg-gray-50">
-        <div class="w-10/12 md:w-7/12 lg:6/12 mx-auto relative py-20 lg:hidden">
-          <div class="border-l-2 mt-10">
+        <div className="w-10/12 md:w-7/12 lg:6/12 mx-auto relative pt-10 pb-16 lg:hidden">
+          <div className="border-l-2">
             {/* <!-- Card 1 --> */}
-            <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-white border border-primary border-opacity-50 shadow dark:bg-gray-900 rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+            <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-white border border-primary border-opacity-50 shadow dark:bg-gray-900 rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
               {/* <!-- Dot Follwing the Left Vertical Line --> */}
-              <div class="w-5 h-5 bg-primary absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+              <div className="w-5 h-5 bg-primary absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
               {/* <!-- Line that connecting the box with the vertical line --> */}
-              <div class="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
+              <div className="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
 
               {/* <!-- Content that showing in the box --> */}
-              <div class="flex-auto">
+              <div className="flex-auto">
                 <h3 className="mb-3 font-bold dark:text-gray-200 text-xl">
                   Web Design and ,React .Js ,Fronted,Junior Mern Stack
                   Developer.
@@ -136,30 +128,30 @@ const TimeLine = () => {
             </div>
 
             {/* <!-- Card 2 --> */}
-            <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 border border-primary border-opacity-50 shadow dark:bg-gray-900 rounded mb-10 flex-col bg-white md:flex-row space-y-4 md:space-y-0">
+            <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 border border-primary border-opacity-50 shadow dark:bg-gray-900 rounded mb-10 flex-col bg-white md:flex-row space-y-4 md:space-y-0">
               {/* <!-- Dot Follwing the Left Vertical Line --> */}
-              <div class="w-5 h-5 bg-primary absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+              <div className="w-5 h-5 bg-primary absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
               {/* <!-- Line that connecting the box with the vertical line --> */}
-              <div class="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
+              <div className="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
 
               {/* <!-- Content that showing in the box --> */}
-              <div class="flex-auto">
+              <div className="flex-auto">
                 <h3 className="mb-3 font-bold dark:text-gray-200 text-xl">
                   Cross browser operability,Responsive design for all devices.
                 </h3>
               </div>
             </div>
             {/* <!-- Card 3 --> */}
-            <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-white border border-primary border-opacity-50 shadow dark:bg-gray-900 rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+            <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-white border border-primary border-opacity-50 shadow dark:bg-gray-900 rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
               {/* <!-- Dot Follwing the Left Vertical Line --> */}
-              <div class="w-5 h-5 bg-primary absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+              <div className="w-5 h-5 bg-primary absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
               {/* <!-- Line that connecting the box with the vertical line --> */}
-              <div class="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
+              <div className="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
 
               {/* <!-- Content that showing in the box --> */}
-              <div class="flex-auto">
+              <div className="flex-auto">
                 <h3 className="mb-3 font-bold dark:text-gray-200 text-xl">
                   Process improvement,workflow optimization.User Requirement
                   Gathering.
@@ -167,15 +159,15 @@ const TimeLine = () => {
               </div>
             </div>
             {/* <!-- Card 4--> */}
-            <div class="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-white border border-primary border-opacity-50 shadow dark:bg-gray-900 rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
+            <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-white border border-primary border-opacity-50 shadow dark:bg-gray-900 rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
               {/* <!-- Dot Follwing the Left Vertical Line --> */}
-              <div class="w-5 h-5 bg-primary absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
+              <div className="w-5 h-5 bg-primary absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"></div>
 
               {/* <!-- Line that connecting the box with the vertical line --> */}
-              <div class="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
+              <div className="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
 
               {/* <!-- Content that showing in the box --> */}
-              <div class="flex-auto">
+              <div className="flex-auto">
                 <h3 className="mb-3 font-bold dark:text-gray-200 text-xl">
                   Fresh, Commentable, Clean Code, Error handling, Debugging,
                   fixing problems.Client Interaction about the project.{" "}

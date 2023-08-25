@@ -12,11 +12,11 @@ import Projects from "../Projects/Projects";
 const HomePage = () => {
   return (
     <>
-      <Services></Services>
       <About></About>
-      <Projects></Projects>
       <Skills></Skills>
+      <Services></Services>
       <CountDown></CountDown>
+      <Projects></Projects>
       <TimeLine></TimeLine>
       <Testimonial></Testimonial>
       <Friends></Friends>

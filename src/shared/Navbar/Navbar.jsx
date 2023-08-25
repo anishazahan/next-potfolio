@@ -27,43 +27,27 @@ const Navbar = () => {
 
   const navbarBgClass =
     theme === "dark"
-      ? styles.navbar_dark_bg
+      ? "navbar_dark_bg"
       : theme === "light"
-      ? styles.navbar_light_bg
-      : styles.navbar_dark_bg;
+      ? "navbar_light_bg"
+      : "navbar_dark_bg;";
 
   return (
-    <div className="bg-black/75">
-      <div className={navbarBgClass}>
+    <div className={`bg-black/75 ${navbarBgClass}`}>
+      <div className={``}>
         <div className="shadow">
-          <nav className=" z-10 custom-container py-4  flex justify-between  items-center ">
+          <nav className=" z-10 custom-container py-5  flex justify-between  items-center ">
             <Link href="/" className="flex items-center">
-              {theme === "dark" ? (
-                <Image width="" height="" src={darkLogo} alt="" />
-              ) : theme === "light" ? (
-                <Image width="" height="" src={lightLogo} alt="" />
-              ) : (
-                <Image width="" height="" src={darkLogo} alt="" />
-              )}
-
-              {/* <div className="flex items-center space-x-0">
-                <button className="text-3xl text-primary">
-                  {" "}
-                  <BiSolidChevronLeft></BiSolidChevronLeft>
-                </button>
-                <h1 className="text-xl px-0 mx-0 text-black dark:text-gray-200  font-bold">
-                  Anisha{" "}
-                </h1>
-                <button className="text-3xl text-primary">
-                  {" "}
-                  <BiSolidChevronRight></BiSolidChevronRight>
-                </button>
-              </div> */}
+              <Image
+                width={100}
+                height={100}
+                src={theme === "dark" ? darkLogo : lightLogo}
+                alt=""
+              />
             </Link>
 
             <div className="hidden  lg:flex  lg:items-center lg:space-x-6">
               <Link
-                smooth={true}
                 duration={500}
                 href="/"
                 className={`font-semibold ${
@@ -87,7 +71,7 @@ const Navbar = () => {
               </Link>
 
               <Link
-                href="/"
+                href="/service"
                 className={`font-semibold ${
                   router.pathname === "/service"
                     ? "text-primary"
@@ -98,7 +82,7 @@ const Navbar = () => {
               </Link>
 
               <Link
-                href="/"
+                href="/project"
                 className={`font-semibold ${
                   router.pathname === "/project"
                     ? "text-primary"
@@ -108,7 +92,7 @@ const Navbar = () => {
                 Project
               </Link>
               <Link
-                href="/"
+                href="/blog"
                 className={`font-semibold ${
                   router.pathname === "/blog"
                     ? "text-primary"
@@ -119,7 +103,7 @@ const Navbar = () => {
               </Link>
 
               <Link
-                href="/"
+                href="/contact"
                 className={`font-semibold ${
                   router.pathname === "/contact"
                     ? "text-primary"
@@ -152,9 +136,12 @@ const Navbar = () => {
                   <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
                 </svg>
               </label>
-              <button className="px-6 hover:bg-black py-3  rounded-sm text-white font-semibold tracking-wider bg-primary">
+              <Link
+                href="/contact"
+                className="px-6 hover:bg-black py-3  rounded-sm text-white font-semibold tracking-wider bg-primary"
+              >
                 Contact Me
-              </button>
+              </Link>
             </div>
             {/* <div className="flex space-x-3 items-center">
             {session ? (
@@ -281,9 +268,9 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                  href="/about"
+                  href="/About"
                   className={`font-semibold ${
-                    router.pathname === "/about"
+                    router.pathname === "/About"
                       ? "text-primary"
                       : "dark:text-gray-200 text-zinc-950 "
                   }`}

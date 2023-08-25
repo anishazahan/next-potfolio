@@ -23,7 +23,7 @@ const data = [
 
 const Testimonial = () => {
   return (
-    <div className="custom-container">
+    <div className="custom-container pb-24">
       <div className="relative">
         <h2 className="text-[80px] font-extrabold font-uppercase absolute left-0 -top-20">
           <span className="text-stroke text-transparent-stroke">Review</span>
@@ -34,12 +34,12 @@ const Testimonial = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 gap-10 mt-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 ">
         {data.map((item, index) => {
           return (
             <div
               key={index}
-              className="px-7 relative py-6 dark:bg-black/60 light:bg-gray-900 rounded-sm "
+              className="px-7 relative py-6 bg-gray-900 dark:bg-black/60 light:bg-gray-900 rounded-sm "
             >
               <Image
                 width="0"

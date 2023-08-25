@@ -5,6 +5,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import UpdateProject from "./UpdateProject";
+import RootLayout from "@/components/layout/RootLayout";
 
 const Project = () => {
   const { data, isLoading, isError, error } = useGetProjectQuery();
@@ -44,3 +45,7 @@ const Project = () => {
 };
 
 export default Project;
+
+Project.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>;
+};
