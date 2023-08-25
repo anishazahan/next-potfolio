@@ -176,21 +176,21 @@ const Navbar = () => {
           </div> */}
 
             <div className="lg:hidden flex space-x-3 items-center">
-              <label className="swap swap-rotate px-6 py-1 rounded-full bg-gray-700 dark:bg-gray-700">
+              <label className="swap swap-rotate px-4 md:px-6 py-1 rounded-full bg-gray-700 dark:bg-gray-700">
                 <input
                   type="checkbox"
                   checked={theme === "dark"}
                   onChange={toggleTheme}
                 />
                 <svg
-                  className="swap-on fill-white w-10 h-10"
+                  className="swap-on fill-white h-6 w-6 md:w-10 md:h-10"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
                   <path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
                 </svg>
                 <svg
-                  className="swap-off fill-white w-10 h-10"
+                  className="swap-off fill-white h-6 w-6 md:w-10 md:h-10"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
@@ -200,7 +200,7 @@ const Navbar = () => {
               <div className="">
                 <button
                   onClick={() => setIsMenuOpen(true)}
-                  className="drawer-button flex items-end text-black dark:text-white text-3xl text-black-600 py-3"
+                  className="drawer-button flex items-end text-white text-3xl text-black-600 py-3"
                 >
                   <AiOutlineMenuUnfold></AiOutlineMenuUnfold>
                 </button>
@@ -213,24 +213,18 @@ const Navbar = () => {
 
         {isMenuOpen && (
           <div className=" navbar-menu relative z-50 lg:hidden">
-            <div className=" fixed inset-0 dark:bg-gray-800 bg-purple-100 "></div>
-            <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 dark:bg-zinc-900 bg-gray-300 border-r overflow-y-auto">
+            <div className=" fixed inset-0 bg-transparent"></div>
+            <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-zinc-900 border-r overflow-y-auto">
               <div className="flex items-center justify-between mb-8">
                 <Link href="/" className="flex items-center">
-                  {theme === "dark" ? (
-                    <Image width="" height="" src={darkLogo} alt="" />
-                  ) : theme === "light" ? (
-                    <Image width="" height="" src={lightLogo} alt="" />
-                  ) : (
-                    <Image width="" height="" src={darkLogo} alt="" />
-                  )}
+                  <Image width="" height="" src={darkLogo} alt="" />
                 </Link>
                 <button
                   onClick={() => setIsMenuOpen(false)}
                   className="navbar-close"
                 >
                   <svg
-                    className="h-6 w-6 dark:text-gray-200 text-black cursor-pointer hover:text-gray-500"
+                    className="h-6 w-6 text-gray-200 cursor-pointer hover:text-gray-500"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"

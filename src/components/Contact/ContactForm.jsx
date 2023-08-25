@@ -6,15 +6,14 @@ const Contact = () => {
       {/* <!-- component --> */}
 
       <div className="relative custom-container mb-4">
-      <h2 className="text-[50px] font-extrabold font-uppercase absolute left-0 px-9 -top-10">
-        <span className={`text-stroke-effect`} data-text="Contact" />
-      </h2>
+        <h2 className="text-[50px] font-extrabold font-uppercase absolute left-0 px-9 -top-10">
+          <span className={`text-stroke-effect`} data-text="Contact" />
+        </h2>
 
-      <h2 className="text-3xl contact-heading mb-7 font-bold dark:text-gray-200 mt-4">
-        Contact <span className="text-primary">Me</span>
-      </h2>
-    </div>
-
+        <h2 className="text-3xl contact-heading mb-7 font-bold dark:text-gray-200 mt-4">
+          Contact <span className="text-primary">Me</span>
+        </h2>
+      </div>
 
       <div className=" custom-container grid grid-cols-1 gap-4 md:grid-cols-2">
         <div
@@ -104,7 +103,7 @@ const Contact = () => {
         <form
           action="https://formspree.io/f/myyovplp"
           method="post"
-          className="mt-10 px-5 md:px-0"
+          className="mt-10 lg:px-5 md:px-0"
         >
           <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
           <div className="grid gap-6 sm:grid-cols-2">
