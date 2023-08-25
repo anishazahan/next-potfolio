@@ -33,17 +33,12 @@ const Navbar = () => {
       : "navbar_dark_bg;";
 
   return (
-    <div className={`bg-black/75 ${navbarBgClass}`}>
-      <div className={``}>
-        <div className="shadow">
-          <nav className=" z-10 custom-container py-5  flex justify-between  items-center ">
+    <div className={`bg-black/75 `}>
+      <div className={navbarBgClass}>
+        <div className="shadow bg-gray-950">
+          <nav className=" z-10 custom-container  py-5  flex justify-between  items-center ">
             <Link href="/" className="flex items-center">
-              <Image
-                width={100}
-                height={100}
-                src={theme === "dark" ? darkLogo : lightLogo}
-                alt=""
-              />
+              <Image width={100} height={100} src={darkLogo} alt="" />
             </Link>
 
             <div className="hidden  lg:flex  lg:items-center lg:space-x-6">
@@ -51,9 +46,7 @@ const Navbar = () => {
                 duration={500}
                 href="/"
                 className={`font-semibold ${
-                  router.pathname === "/"
-                    ? "text-primary"
-                    : "dark:text-gray-200 text-zinc-950 "
+                  router.pathname === "/" ? "text-primary" : "text-gray-200 "
                 }`}
               >
                 Home
@@ -64,7 +57,7 @@ const Navbar = () => {
                 className={`font-semibold ${
                   router.pathname === "/About"
                     ? "text-primary"
-                    : "dark:text-gray-200 text-zinc-950 "
+                    : "text-gray-200 "
                 }`}
               >
                 About
@@ -75,7 +68,7 @@ const Navbar = () => {
                 className={`font-semibold ${
                   router.pathname === "/service"
                     ? "text-primary"
-                    : "dark:text-gray-200 text-zinc-950 "
+                    : "text-gray-200 "
                 }`}
               >
                 Services
@@ -86,7 +79,7 @@ const Navbar = () => {
                 className={`font-semibold ${
                   router.pathname === "/project"
                     ? "text-primary"
-                    : "dark:text-gray-200 text-zinc-950 "
+                    : "text-gray-200 "
                 }`}
               >
                 Project
@@ -96,7 +89,7 @@ const Navbar = () => {
                 className={`font-semibold ${
                   router.pathname === "/blog"
                     ? "text-primary"
-                    : "dark:text-gray-200 text-zinc-950 "
+                    : "text-gray-200 "
                 }`}
               >
                 Blog
@@ -107,7 +100,7 @@ const Navbar = () => {
                 className={`font-semibold ${
                   router.pathname === "/contact"
                     ? "text-primary"
-                    : "dark:text-gray-200 text-zinc-950 "
+                    : "text-gray-200 "
                 }`}
               >
                 Conatct
@@ -259,9 +252,7 @@ const Navbar = () => {
                   duration={500}
                   href="/"
                   className={`font-semibold ${
-                    router.pathname === "/"
-                      ? "text-primary"
-                      : "dark:text-gray-200 text-zinc-950 "
+                    router.pathname === "/" ? "text-primary" : "text-gray-200 "
                   }`}
                 >
                   Home
@@ -272,7 +263,7 @@ const Navbar = () => {
                   className={`font-semibold ${
                     router.pathname === "/About"
                       ? "text-primary"
-                      : "dark:text-gray-200 text-zinc-950 "
+                      : "text-gray-200 "
                   }`}
                 >
                   About
@@ -283,7 +274,7 @@ const Navbar = () => {
                   className={`font-semibold ${
                     router.pathname === "/service"
                       ? "text-primary"
-                      : "dark:text-gray-200 text-zinc-950 "
+                      : "text-gray-200 "
                   }`}
                 >
                   Services
@@ -294,7 +285,7 @@ const Navbar = () => {
                   className={`font-semibold ${
                     router.pathname === "/project"
                       ? "text-primary"
-                      : "dark:text-gray-200 text-zinc-950 "
+                      : "text-gray-200 "
                   }`}
                 >
                   Project
@@ -304,7 +295,7 @@ const Navbar = () => {
                   className={`font-semibold ${
                     router.pathname === "/blog"
                       ? "text-primary"
-                      : "dark:text-gray-200 text-zinc-950 "
+                      : "text-gray-200 "
                   }`}
                 >
                   Blog
@@ -315,7 +306,7 @@ const Navbar = () => {
                   className={`font-semibold ${
                     router.pathname === "/contact"
                       ? "text-primary"
-                      : "dark:text-gray-200 text-zinc-950 "
+                      : "text-gray-200 "
                   }`}
                 >
                   Conatct

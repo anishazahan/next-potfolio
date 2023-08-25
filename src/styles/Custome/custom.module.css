@@ -99,3 +99,28 @@
     background-position: center;
     margin: auto;
 }
+
+
+
+/* ......... scroll to to........ */
+
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  .scrollToTop.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
