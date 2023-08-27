@@ -31,7 +31,7 @@ export const data = [
   },
   {
     id: 6,
-    title: "Next.Js Application",
+    title: "Performance Optimization",
     description:
       "Elevated SEO Optimization: Unlock the full potential of your application with SEO-friendly enhancements. Using the Next.js React framework, I'll ensure faster load times and heightened productivity. Your digital presence will shine brighter, attracting both users and search engines alike.",
   },

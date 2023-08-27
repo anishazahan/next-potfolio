@@ -15,16 +15,15 @@ const HomeBanner = () => {
             Hey, I am Anisha Zahan Hashi{" "}
           </h2>
           <h2 className="text-5xl dark:text-gray-200 font-bold mx-auto text-center pb-6">
-            Expert <span className="text-primary">Fronted </span> Developer
+            Expert <span className="text-primary">Frontend </span> Developer
           </h2>
           <p className="dark:text-gray-200 text-center mx-auto font-medium max-w-2xl pb-4">
-            I am fronted React Js Developer.I have 2 years work experience.I
-            have fresh knowledge of html,css,bootstrap,tailwind,javascript
-            ES6(comfortable),react.js,
+            I am Frontend Developer with 2 years work experience.I will
+            customize your website as your creative choice.
           </p>
           <div className="flex justify-center space-x-5 items-center mt-5 pb-10">
             <Link
-              href="/"
+              href="/contact"
               className="px-6  py-3  rounded-sm text-white hover:bg-black font-semibold tracking-wider bg-primary"
             >
               Hire Me
@@ -38,18 +37,30 @@ const HomeBanner = () => {
           </div>
 
           <div className="flex justify-center items-center space-x-2">
-            <button className="text-2xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full">
+            <Link
+              href="https://www.facebook.com/anishazahan13?mibextid=ZbWKwL"
+              className="text-2xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full"
+            >
               <BsFacebook></BsFacebook>
-            </button>
-            <button className="text-2xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full">
+            </Link>
+            <Link
+              href="https://join.skype.com/invite/wml21guEKXrn"
+              className="text-2xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full"
+            >
               <AiFillSkype></AiFillSkype>
-            </button>
-            <button className="text-2xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full">
+            </Link>
+            <Link
+              href="anishazahan13@gmail.com"
+              className="text-2xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full"
+            >
               <SiGmail></SiGmail>
-            </button>
-            <button className="text-2xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full">
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/anisha-zahan/"
+              className="text-2xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full"
+            >
               <TiSocialLinkedinCircular></TiSocialLinkedinCircular>
-            </button>
+            </Link>
           </div>
         </div>
         {/* <div className="w-[50%]">

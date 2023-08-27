@@ -80,7 +80,7 @@ const Friends = () => {
           </Link>
 
           <Link
-            href="https://join.skype.com/invite/wml21guEKXrn"
+            href="/"
             target="_blank"
             className="flex items-center justify-between cursor-pointer px-12 py-10 border dark:bg-gray-900 bg-white border-primary hover:border-opacity-95 shadow  border-opacity-60 rounded-sm"
           >
@@ -98,7 +98,7 @@ const Friends = () => {
           </Link>
 
           <Link
-            href="https://join.skype.com/invite/wml21guEKXrn"
+            href="https://www.facebook.com/anishazahan13?mibextid=ZbWKwL"
             target="_blank"
             className="flex items-center justify-between cursor-pointer px-12 py-10 border dark:bg-gray-900 bg-white border-primary hover:border-opacity-95 shadow  border-opacity-60 rounded-sm"
           >

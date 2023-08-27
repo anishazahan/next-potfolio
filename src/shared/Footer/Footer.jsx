@@ -25,18 +25,30 @@ const Footer = () => {
               satisfied
             </p>
             <div className="flex items-center space-x-2 mt-4">
-              <button className="text-xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full">
+              <Link
+                href="https://www.facebook.com/anishazahan13?mibextid=ZbWKwL"
+                className="text-xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full"
+              >
                 <BsFacebook></BsFacebook>
-              </button>
-              <button className="text-xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full">
+              </Link>
+              <Link
+                href="https://join.skype.com/invite/wml21guEKXrn"
+                className="text-xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full"
+              >
                 <AiFillSkype></AiFillSkype>
-              </button>
-              <button className="text-xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full">
+              </Link>
+              <Link
+                href="anishazahan13@gmail.com"
+                className="text-xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full"
+              >
                 <SiGmail></SiGmail>
-              </button>
-              <button className="text-xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full">
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/anisha-zahan/"
+                className="text-xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full"
+              >
                 <TiSocialLinkedinCircular></TiSocialLinkedinCircular>
-              </button>
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
@@ -45,16 +57,16 @@ const Footer = () => {
                 About
               </p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-400">
-                <Link className="hover:opacity-75" href="/">
+                <Link className="hover:opacity-75" href="/About">
                   About
                 </Link>
-                <Link className="hover:opacity-75" href="/">
+                <Link className="hover:opacity-75" href="/About">
                   Courses
                 </Link>
-                <Link className="hover:opacity-75" href="/">
+                <Link className="hover:opacity-75" href="/About">
                   Certificate
                 </Link>
-                <Link className="hover:opacity-75" href="/">
+                <Link className="hover:opacity-75" href="/project">
                   Project
                 </Link>
               </nav>
