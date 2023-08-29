@@ -5,6 +5,7 @@ import { BsFacebook } from "react-icons/bs";
 import { AiFillSkype } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
+import resume from "./resume.pdf";
 
 const HomeBanner = () => {
   return (
@@ -29,7 +30,9 @@ const HomeBanner = () => {
               Hire Me
             </Link>
             <Link
-              href="/"
+              href={resume}
+              target="_blank"
+              rel="noreferrer"
               className="px-6  py-[11px] border border-primary dark:text-white dark:bg-black/75 rounded-sm text-primary hover:opacity-70 font-semibold tracking-wider hover:text-primary "
             >
               See Resume
