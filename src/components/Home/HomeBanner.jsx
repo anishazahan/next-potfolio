@@ -9,7 +9,10 @@ import resume from "./resume.pdf";
 
 const HomeBanner = () => {
   return (
-    <div className="custom-container pt-24 pb-32">
+    <div className="relative custom-container pt-24 pb-32">
+      <div className=" z-10 top-[30%] right-0 fixed">
+        <div className="w-10 h-10 bg-red-300"></div>
+      </div>
       <div className="flex justify-center text-center items-center">
         <div className="">
           <h2 className="dark:text-gray-200 font-semibold mb-3">

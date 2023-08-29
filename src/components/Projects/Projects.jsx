@@ -60,8 +60,10 @@ const Projects = () => {
               key={index}
               className=""
             >
-              <Image width="0" height="0" src={item.img} alt="" />
-              {/* Render other project details here */}
+              <div className="relative ">
+                <div className="absolute inset-0 h-full w-full bg-black/20 hover:bg-black/60 duration-300"></div>
+                <Image width="0" height="0" src={item.img} alt="" />
+              </div>
             </Link>
           ))}
         </div>
