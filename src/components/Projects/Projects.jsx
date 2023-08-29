@@ -1,9 +1,22 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import img from "../../assets/img/WhatsApp Image 2023-08-26 at 21.53.51.jpg";
 import img2 from "../../assets/img/WhatsApp Image 2.jpg";
+import { data } from "./data.js";
 
 const Projects = () => {
+  const [selectedType, setSelectedType] = useState("Frontend"); // Default selected type
+
+  const filteredProjects = data.filter((item) => item.type === selectedType);
+  const [showAllProjects, setShowAllProjects] = useState(false);
+
+  const displayedProjects = showAllProjects
+    ? filteredProjects
+    : filteredProjects.slice(0, 6); // Show up to 6 projects initially
+
+  const toggleShowAll = () => {
+    setShowAllProjects(!showAllProjects);
+  };
   return (
     <div className="custom-container mb-32">
       <div className="relative mb-4">
@@ -15,34 +28,45 @@ const Projects = () => {
           My Latest <span className="text-primary">Projects</span>
         </h2>
 
-        <div className="flex space-x-3 items-center">
-          <button className="px-9 py-3 text-sm bg-primary font-bold text-white rounded-sm">
+        <div className="flex space-x-3 items-center mb-8">
+          <button
+            className={`px-9 py-3 text-sm font-bold text-white rounded-sm ${
+              selectedType === "Fullstack"
+                ? "bg-primary"
+                : "dark:bg-gray-900 dark:border-0 dark:text-white text-black border-primary border-opacity-40"
+            }`}
+            onClick={() => setSelectedType("Fullstack")}
+          >
             Full Stack
           </button>
-          <button className="px-9 py-3 text-sm bg-primary font-bold text-white rounded-sm">
+          <button
+            className={`px-9 py-3 text-sm border font-bold text-white rounded-sm ${
+              selectedType === "Frontend"
+                ? "bg-primary"
+                : "dark:bg-gray-900 dark:border-0 border-primary border-opacity-40"
+            }`}
+            onClick={() => setSelectedType("Frontend")}
+          >
             Frontend
           </button>
         </div>
 
         <div className="grid gap-6 grid-cols-3">
-          <div className="">
-            <Image src={img2} alt="" />
-          </div>
-          <div className="">
-            <Image src={img2} alt="" />
-          </div>
-          <div className="">
-            <Image src={img2} alt="" />
-          </div>
-          <div className="">
-            <Image src={img2} alt="" />
-          </div>
-          <div className="">
-            <Image src={img2} alt="" />
-          </div>
-          <div className="">
-            <Image src={img2} alt="" />
-          </div>
+          {displayedProjects.map((item, index) => (
+            <div key={index} className="">
+              <Image width="0" height="0" src={item.img} alt="" />
+              {/* Render other project details here */}
+            </div>
+          ))}
+        </div>
+
+        <div className="flex justify-end pr-5 mt-16">
+          <button
+            className="dark:text-gray-200 font-bold"
+            onClick={toggleShowAll}
+          >
+            {showAllProjects ? "See Less..." : "See More..."}
+          </button>
         </div>
       </div>
     </div>
