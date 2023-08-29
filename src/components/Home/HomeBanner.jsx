@@ -6,13 +6,14 @@ import { AiFillSkype } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import resume from "./resume.pdf";
+import ChangeColor from "../layout/ChangeColor";
 
 const HomeBanner = () => {
   return (
-    <div className="relative custom-container pt-24 pb-32">
-      <div className=" z-10 top-[30%] right-0 fixed">
-        <div className="w-10 h-10 bg-red-300"></div>
-      </div>
+    <div className=" custom-container pt-24 pb-32">
+      {/* <div className=" z-10 top-[30%] right-0 fixed">
+        <ChangeColor></ChangeColor>
+      </div> */}
       <div className="flex justify-center text-center items-center">
         <div className="">
           <h2 className="dark:text-gray-200 font-semibold mb-3">
