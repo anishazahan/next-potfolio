@@ -47,7 +47,7 @@ const About = () => {
 
           <div className="inline-block ">
             <Link
-              href="/"
+              href="/project"
               className="group hover:bg-primary bg-gray-200 dark:bg-gray-700 pr-7 duration-300 rounded-full mt-10 flex items-center space-x-2"
             >
               <button className="p-4 bg-primary rounded-full text-xl text-gray-200">

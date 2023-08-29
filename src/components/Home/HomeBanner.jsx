@@ -7,8 +7,20 @@ import { SiGmail } from "react-icons/si";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import resume from "./resume.pdf";
 import ChangeColor from "../layout/ChangeColor";
+import { gsap } from "gsap";
+import { useEffect } from "react";
 
 const HomeBanner = () => {
+  // useEffect(() => {
+  //   const tl = gsap.timeline({ defaults: { ease: "elastic.out(1, 0.75)" } });
+
+  //   tl.from(".bouncy-btn", {
+  //     scale: 0.8,
+  //     opacity: 0,
+  //     duration: 0.6,
+  //     stagger: 0.2,
+  //   });
+  // }, []);
   return (
     <div className=" custom-container pt-24 pb-32">
       {/* <div className=" z-10 top-[30%] right-0 fixed">
@@ -37,7 +49,7 @@ const HomeBanner = () => {
               href={resume}
               target="_blank"
               rel="noreferrer"
-              className="px-6  py-[11px] border border-primary dark:text-white dark:bg-black/75 rounded-sm text-primary hover:opacity-70 font-semibold tracking-wider hover:text-primary "
+              className="px-6 py-[11px] border border-primary dark:text-white dark:bg-black/75 rounded-sm text-primary hover:opacity-70 font-semibold tracking-wider hover:text-primary bouncy-btn"
             >
               See Resume
             </Link>

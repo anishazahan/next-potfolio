@@ -29,7 +29,7 @@ const Projects = () => {
           My Latest <span className="text-primary">Projects</span>
         </h2>
 
-        <div className="flex space-x-3 items-center mb-8">
+        <div className="flex space-x-3 items-center mb-12">
           <button
             className={`px-9 py-3 text-sm font-bold text-white rounded-sm ${
               selectedType === "Fullstack"
