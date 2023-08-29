@@ -60,7 +60,7 @@ export const data = [
     type: "Fullstack",
   },
   {
-    id: "12",
+    id: "3",
     img: best,
     detailsImg:
       "https://i.ibb.co/Qvt47fj/Screenshot-2022-11-30-at-19-51-19-React-App.png",
@@ -87,7 +87,7 @@ export const data = [
   },
 
   {
-    id: "12",
+    id: "4",
     img: BD,
     detailsImg: BDD,
     name: "BD Courses",
@@ -112,7 +112,7 @@ export const data = [
   },
 
   {
-    id: "11",
+    id: "5",
     img: event,
     detailsImg: event,
     name: "Eventrox",
@@ -130,7 +130,7 @@ export const data = [
   },
 
   {
-    id: "11",
+    id: "6",
     img: muslime,
     detailsImg:
       "https://i.ibb.co/CV9pjTN/Screenshot-2022-11-30-at-08-19-28-Muslime-Ummah.png",
@@ -159,7 +159,7 @@ export const data = [
   },
 
   {
-    id: "12",
+    id: "7",
     img: todo,
     detailsImg: todoDetails,
     name: "Todo App React Typescript",
@@ -177,7 +177,7 @@ export const data = [
   },
 
   {
-    id: "11",
+    id: "8",
     img: personalPortfolioHR,
     detailsImg: personalPortfolioHRDetails,
     name: "Personal Portfolio(HR)",
@@ -194,7 +194,7 @@ export const data = [
   },
 
   {
-    id: "11",
+    id: "9",
     img: personalPortfolio,
     detailsImg: personalPortfolioDetails,
     name: "Personal Portfolio",
@@ -285,7 +285,7 @@ export const data = [
   //   },
 
   {
-    id: "12",
+    id: "11",
     img: BTS,
     detailsImg: BTSD,
     name: "BTS Service",

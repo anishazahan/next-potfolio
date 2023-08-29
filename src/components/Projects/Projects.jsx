@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import img from "../../assets/img/WhatsApp Image 2023-08-26 at 21.53.51.jpg";
 import img2 from "../../assets/img/WhatsApp Image 2.jpg";
 import { data } from "./data.js";
+import Link from "next/link";
 
 const Projects = () => {
   const [selectedType, setSelectedType] = useState("Frontend"); // Default selected type
@@ -33,17 +34,17 @@ const Projects = () => {
             className={`px-9 py-3 text-sm font-bold text-white rounded-sm ${
               selectedType === "Fullstack"
                 ? "bg-primary"
-                : "dark:bg-gray-900 dark:border-0 dark:text-white text-black border-primary border-opacity-40"
+                : "bg-gray-900 border-primary border-opacity-40"
             }`}
             onClick={() => setSelectedType("Fullstack")}
           >
             Full Stack
           </button>
           <button
-            className={`px-9 py-3 text-sm border font-bold text-white rounded-sm ${
+            className={`px-9 py-3 text-sm font-bold text-white rounded-sm ${
               selectedType === "Frontend"
                 ? "bg-primary"
-                : "dark:bg-gray-900 dark:border-0 border-primary border-opacity-40"
+                : "bg-gray-900 border border-primary border-opacity-40"
             }`}
             onClick={() => setSelectedType("Frontend")}
           >
@@ -53,10 +54,15 @@ const Projects = () => {
 
         <div className="grid gap-6 grid-cols-3">
           {displayedProjects.map((item, index) => (
-            <div key={index} className="">
+            <Link
+              target="_blank"
+              href={`/project/${item.id}`}
+              key={index}
+              className=""
+            >
               <Image width="0" height="0" src={item.img} alt="" />
               {/* Render other project details here */}
-            </div>
+            </Link>
           ))}
         </div>
 
