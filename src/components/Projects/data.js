@@ -1,9 +1,12 @@
 import quize from "../../assets/img/project/Group 17.png";
+import quizeDetails from "../../assets/img/project/Screenshot 2023-08-29 at 17-32-45 Quiz App.png";
 import youtube from "../../assets/img/project/Rectangle 53.png";
 import influencer from "../../assets/img/project/Group 6.png";
 import muslime from "../../assets/img/project/Group 8.png";
+import muslimeDetails from "../../assets/img/project/Screenshot 2023-08-29 at 17-42-27 Muslime Ummah.png";
 import personalPortfolio from "../../assets/img/project/Group 4.png";
 import best from "../../assets/img/project/Group 13.png";
+import bestDetails from "../../assets/img/project/Screenshot 2023-08-29 at 17-41-15 Best Choice.png";
 import BD from "../../assets/img/project/Group 10.png";
 import BTS from "../../assets/img/project/Group 9.png";
 import arc from "../../assets/img/project/Group 3.png";
@@ -23,8 +26,7 @@ export const data = [
   {
     id: "1",
     img: quize,
-    detailsImg:
-      "https://i.ibb.co/2M6mpYz/Screenshot-2022-11-30-at-21-40-16-Quiz-App.png",
+    detailsImg: quizeDetails,
     name: "Quiz App",
     description: [
       "Implement MVC architecture , Schema designs for questions and results, use Mongoose.",
@@ -54,16 +56,15 @@ export const data = [
       "Give in input Youtube video url link,select regulation and click download button",
     ],
     useTecnology: ["Tailwind", "Next Js", "Typescript", "Axios", "Node Js"],
-    live: "https://quiz-application.onrender.com/",
-    code: "https://github.com/anishazahan/Quize-app",
-    server: "https://github.com/anishazahan/Quiz-app-server",
+    live: "https://youtube-vedio-downloader-orcin.vercel.app/",
+    code: "https://github.com/anishazahan/vedio-downloader-extension-client",
+    server: "https://github.com/anishazahan/vedio-downloader-extension-server",
     type: "Fullstack",
   },
   {
     id: "3",
     img: best,
-    detailsImg:
-      "https://i.ibb.co/Qvt47fj/Screenshot-2022-11-30-at-19-51-19-React-App.png",
+    detailsImg: bestDetails,
     name: "Best Choice",
     description: [
       "Using React router ,Tailwind, DaisyUI,Responsive for all devices.MVC architecture,schema design.",
@@ -80,7 +81,7 @@ export const data = [
       " Express Js",
       "Mongoose",
     ],
-    live: "https://best-choice-a3d8e.firebaseapp.com/",
+    live: "https://best-choice.vercel.app/",
     code: "https://github.com/anishazahan/Best-Choice",
     server: "https://github.com/anishazahan/Best-Choice-server",
     type: "Fullstack",
@@ -105,9 +106,9 @@ export const data = [
       "Moment js",
       "Aos animation",
     ],
-    live: "https://best-choice-a3d8e.firebaseapp.com/",
-    code: "https://github.com/anishazahan/Best-Choice",
-    server: "https://github.com/anishazahan/Best-Choice-server",
+    live: "https://bd-courses.vercel.app/",
+    code: "https://github.com/anishazahan/BD-Courses",
+    server: "",
     type: "Frontend",
   },
 
@@ -123,17 +124,16 @@ export const data = [
       "Fresh,Comentable,CleanCode,Error handling, Debugging,fixing problems.Client Interaction this project.",
     ],
     useTecnology: ["Tailwind", "Next Js", "Aos animation", "Swiper slide"],
-    live: "https://muslim-ummah-3d299.web.app/",
-    code: "https://github.com/anishazahan/Muslime-Ummah",
-    server: "https://github.com/anishazahan/Muslime-Ummah-server",
+    live: "https://even-trox.vercel.app/",
+    code: "https://github.com/anishazahan/Even-trox",
+    server: "",
     type: "Frontend",
   },
 
   {
     id: "6",
     img: muslime,
-    detailsImg:
-      "https://i.ibb.co/CV9pjTN/Screenshot-2022-11-30-at-08-19-28-Muslime-Ummah.png",
+    detailsImg: muslimeDetails,
     name: "Muslime Ummah",
     description: [
       "Using Tailwind, React-Redux, Moment .js for using dynamic date in events route.",
@@ -170,9 +170,9 @@ export const data = [
       "Responsive Design",
     ],
     useTecnology: ["Html", "Css", "Tailwind"],
-    live: "https://best-choice-a3d8e.firebaseapp.com/",
-    code: "https://github.com/anishazahan/Best-Choice",
-    server: "https://github.com/anishazahan/Best-Choice-server",
+    live: "https://todo-app-react-typescript-65ia.vercel.app/",
+    code: "https://github.com/anishazahan/todo-app-react-typescript",
+    server: "",
     type: "Frontend",
   },
 
@@ -187,9 +187,9 @@ export const data = [
       "Fresh,Comentable,CleanCode,Error handling, Debugging,fixing problems.Client Interaction this project.",
     ],
     useTecnology: ["Tailwind", "React Js", "Aos animation", "Swiper slide"],
-    live: "https://muslim-ummah-3d299.web.app/",
-    code: "https://github.com/anishazahan/Muslime-Ummah",
-    server: "https://github.com/anishazahan/Muslime-Ummah-server",
+    live: "https://hr-limon.vercel.app/",
+    code: "https://github.com/anishazahan/portfolio-hr",
+    server: "",
     type: "Frontend",
   },
 
@@ -205,9 +205,9 @@ export const data = [
       "Fresh,Comentable,CleanCode,Error handling, Debugging,fixing problems.Client Interaction this project.",
     ],
     useTecnology: ["Tailwind", "Next Js", "Aos animation", "Swiper slide"],
-    live: "https://muslim-ummah-3d299.web.app/",
-    code: "https://github.com/anishazahan/Muslime-Ummah",
-    server: "https://github.com/anishazahan/Muslime-Ummah-server",
+    live: "https://portfolio-anisha.vercel.app/",
+    code: "https://github.com/anishazahan/Portfolio-2",
+    server: "",
     type: "Frontend",
   },
 
@@ -297,9 +297,9 @@ export const data = [
       "css grid system implement",
     ],
     useTecnology: ["Html", "Css", "Tailwind"],
-    live: "https://best-choice-a3d8e.firebaseapp.com/",
-    code: "https://github.com/anishazahan/Best-Choice",
-    server: "https://github.com/anishazahan/Best-Choice-server",
+    live: "https://bts-kappa.vercel.app/",
+    code: "https://github.com/anishazahan/BTS-PSD-to-HTML",
+    server: "",
     type: "Frontend",
   },
   {
@@ -315,9 +315,9 @@ export const data = [
       "css grid system implement",
     ],
     useTecnology: ["Html", "Css", "Tailwind"],
-    live: "https://best-choice-a3d8e.firebaseapp.com/",
-    code: "https://github.com/anishazahan/Best-Choice",
-    server: "https://github.com/anishazahan/Best-Choice-server",
+    live: "https://architecture-rosy.vercel.app/",
+    code: "https://github.com/anishazahan/architechture-2",
+    server: "",
     type: "Frontend",
   },
 ];
