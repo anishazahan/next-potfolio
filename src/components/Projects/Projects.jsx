@@ -52,7 +52,7 @@ const Projects = () => {
           </button>
         </div>
 
-        <div className="grid gap-6 grid-cols-3">
+        <div className="grid gap-6 grid-cols-2 lg:grid-cols-3">
           {displayedProjects.map((item, index) => (
             <Link
               target="_blank"

@@ -1,6 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import Modal from "react-modal";
+import { HiCheckCircle } from "react-icons/hi";
 
 const Contact = () => {
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+
+  const onSubmit = async (data) => {
+    try {
+      const response = await fetch(
+        "https://next-portfolio-server.vercel.app/api/project/send-message",
+        // "http://localhost:3000/api/project/send-message",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+
+      const responseData = await response.json();
+      if (responseData.status === "success") {
+        // Show the custom popup
+        setShowPopup(true);
+
+        // Reset the form fields
+        reset();
+      }
+    } catch (error) {
+      console.error("Error sending data:", error);
+    }
+  };
+
+  const handlePopupClose = () => {
+    setShowPopup(false);
+  };
+
+  // action="https://formspree.io/f/myyovplp"
+  // method="post"
+
   return (
     <div className="  pt-16 pb-32">
       {/* <!-- component --> */}
@@ -101,54 +147,101 @@ const Contact = () => {
         </div>
 
         <form
-          action="https://formspree.io/f/myyovplp"
-          method="post"
+          onSubmit={handleSubmit(onSubmit)}
           className="mt-10 lg:px-5 md:px-0"
         >
-          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="relative z-0">
               <input
                 type="text"
-                name="name"
+                {...register("name", { required: "Name is required" })}
                 className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-200 focus:border-primary focus:outline-none focus:ring-0"
                 placeholder=" "
               />
               <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary peer-focus:dark:text-blue-500">
                 Your name
               </label>
+              {errors.name && (
+                <span className="text-red-500 text-sm text-italic">
+                  {errors.name.message}
+                </span>
+              )}
             </div>
             <div className="relative z-0">
               <input
                 type="text"
-                name="email"
+                {...register("email", {
+                  required: "Email is required",
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                    message: "Invalid email address",
+                  },
+                })}
                 className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-200 focus:border-primary focus:outline-none focus:ring-0"
                 placeholder=" "
               />
               <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary peer-focus:dark:text-blue-500">
                 Your email
               </label>
+              {errors.email && (
+                <span className="text-red-500 text-sm text-italic">
+                  {errors.email.message}
+                </span>
+              )}
             </div>
             <div className="relative z-0 col-span-2">
               <textarea
                 name="message"
                 rows="5"
+                {...register("message", { required: "Message is required" })}
                 className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-200 focus:border-primary focus:outline-none focus:ring-0"
                 placeholder=" "
               ></textarea>
               <label className="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary peer-focus:dark:text-blue-500">
                 Your message
               </label>
+              {errors.message && (
+                <span className="text-red-500 text-sm text-italic">
+                  {errors.message.message}
+                </span>
+              )}
             </div>
           </div>
           <button
-            data-aos="fade-left"
+            data-aos="fade-up"
             type="submit"
-            className="mt-5 font-semibold hover:opacity-70 duration-500 px-10 py-3 text-white bg-primary "
+            className="mt-5 font-semibold hover:opacity-70 duration-500 px-10 py-3 text-white bg-primary"
           >
             Send Message
           </button>
         </form>
+
+        {showPopup && (
+          <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
+            <div className="bg-black/80 w-[80%] py-20  md:w-[600px]  items-center rounded-md">
+              <div className="flex justify-center ">
+                <button className="text-7xl text-green-700">
+                  <HiCheckCircle></HiCheckCircle>
+                </button>
+              </div>
+              <p className="text-xl text-slate-200 font-bold mb-4 text-center">
+                Message Send Successfully.
+              </p>
+              <p className="text-gray-200 text-center mb-5">
+                Contacted with you shortly
+              </p>
+
+              <div className="flex justify-center space-x-4 items-center mt-8">
+                <button
+                  className="px-6 py-2 bg-purple-700 text-white rounded-sm font-bold"
+                  onClick={handlePopupClose}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

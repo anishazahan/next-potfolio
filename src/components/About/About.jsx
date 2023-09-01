@@ -7,7 +7,7 @@ import { FaChevronRight } from "react-icons/fa";
 const About = () => {
   return (
     <div>
-      <div className="flex flex-col lg:flex-row custom-container justify-between items-center pt-24 pb-32 md:space-x-14">
+      <div className="flex flex-col lg:flex-row custom-container justify-between items-center pt-10 lg:pt-24 pb-32 md:space-x-14">
         <div className=" w-full lg:w-[45%] mb-20 lg:mb-0">
           <Image width="0" height="0" className="w-full" src={img} alt="" />
         </div>

@@ -83,7 +83,7 @@ const HomeBanner = () => {
               data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-delay="500"
-              href="anishazahan13@gmail.com"
+              href="mailto:anishazahan13@email.com"
               className="text-2xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full"
             >
               <SiGmail></SiGmail>

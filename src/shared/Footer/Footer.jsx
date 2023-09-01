@@ -38,7 +38,7 @@ const Footer = () => {
                 <AiFillSkype></AiFillSkype>
               </Link>
               <Link
-                href="anishazahan13@gmail.com"
+                href="mailto:anishazahan13@email.com"
                 className="text-xl text-primary border p-2 border-primary border-opacity-60  dark:bg-black/70 rounded-full"
               >
                 <SiGmail></SiGmail>
