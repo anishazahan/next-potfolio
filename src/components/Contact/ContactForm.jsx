@@ -17,7 +17,7 @@ const Contact = () => {
     try {
       const response = await fetch(
         "https://next-portfolio-server.vercel.app/api/project/send-message",
-        // "http://localhost:3000/api/project/send-message",
+        // "http://localhost:5000/api/project/send-message",
         {
           method: "POST",
           headers: {
