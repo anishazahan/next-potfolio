@@ -230,21 +230,13 @@ const Contact = () => {
               <p className="text-xl text-slate-200 font-bold mb-4 text-center">
                 Message Send Successfully.
               </p>
-              {data &&
-                data.map((item, index) => {
-                  return (
-                    <p
-                      key={index}
-                      className="text-xl text-slate-200 font-bold mb-4 text-center"
-                    >
-                      Thank you{" "}
-                      <span className="font-bold text-primary">
-                        {item.name}
-                      </span>{" "}
-                      for sending message.
-                    </p>
-                  );
-                })}
+              {data && (
+                <p className="text-xl text-slate-200 font-bold mb-4 text-center">
+                  Thank you{" "}
+                  <span className="font-bold text-primary">{data.name}</span>{" "}
+                  for sending message.
+                </p>
+              )}
               <p className="text-gray-200 text-center mb-5">
                 Contacted with you shortly
               </p>
