@@ -53,9 +53,9 @@ const Navbar = () => {
               </Link>
 
               <Link
-                href="/About"
+                href="/about"
                 className={`font-semibold ${
-                  router.pathname === "/About"
+                  router.pathname === "/about"
                     ? "text-primary"
                     : "text-gray-200 "
                 }`}
@@ -242,7 +242,6 @@ const Navbar = () => {
 
               <div className="space-y-6 flex flex-col items-center">
                 <Link
-                  smooth={true}
                   duration={500}
                   href="/"
                   className={`font-semibold ${
@@ -253,9 +252,9 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                  href="/About"
+                  href="/about"
                   className={`font-semibold ${
-                    router.pathname === "/About"
+                    router.pathname === "/about"
                       ? "text-primary"
                       : "text-gray-200 "
                   }`}

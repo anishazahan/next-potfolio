@@ -208,7 +208,7 @@ const Contact = () => {
             </div>
           </div>
           <button
-            data-aos="fade-up"
+            // data-aos="fade-up"
             type="submit"
             className="mt-5 font-semibold hover:opacity-70 duration-500 px-10 py-3 text-white bg-primary"
           >
