@@ -1,5 +1,3 @@
-import React from "react";
-
 const TimeLine = () => {
   return (
     <>
@@ -34,9 +32,8 @@ const TimeLine = () => {
               className="order-1 dark:bg-gray-900 bg-gray-50 border border-primary border-opacity-50 rounded text-xl  shadow li w-full md:w-5/12 px-8 light:font-semibold py-7"
             >
               <h3 className="mb-3 font-medium dark:text-gray-200 ">
-                Stay up-to-date with the latest frontend technologies, trends,
-                and best practices to continuously improve our development
-                processes
+                Stay up-to-date with the latest frontend technologies, trends, and best practices to continuously
+                improve our development processes,Design and UX Sensibility.
               </h3>
             </div>
           </div>
@@ -57,7 +54,8 @@ const TimeLine = () => {
               className="order-1 dark:bg-gray-900 bg-gray-50 border border-primary border-opacity-50 rounded text-xl  shadow li w-full md:w-5/12 px-8 light:font-semibold py-7"
             >
               <h3 className="mb-3  dark:text-gray-200 text-xl">
-                Cross browser operability,Responsive design for all devices.
+                Attention to Detail,Strong Problem-Solving Skills,Experience with Performance Optimization,Proven Track
+                Record,Creative and Innovative Thinking,Focus on Accessibility and Inclusivity,Client-Focused Approach
               </h3>
             </div>
           </div>
@@ -78,8 +76,8 @@ const TimeLine = () => {
               className="order-1 dark:bg-gray-900 bg-gray-50 border border-primary border-opacity-50 rounded text-xl  shadow li w-full md:w-5/12 px-8 light:font-semibold py-7"
             >
               <h3 className="mb-3  dark:text-gray-200 text-xl">
-                Process improvement,workflow optimization.User Requirement
-                Gathering.
+                Process improvement,workflow optimization.User Requirement Gathering,Cross browser
+                operability,Responsive design for all devices.
               </h3>
             </div>
           </div>
@@ -99,8 +97,8 @@ const TimeLine = () => {
               className="order-1 dark:bg-gray-900 bg-gray-50 border border-primary border-opacity-50 rounded text-xl  shadow li w-full md:w-5/12 px-8 light:font-semibold py-7"
             >
               <h3 className="mb-3  dark:text-gray-200 text-xl">
-                Fresh, Commentable, Clean Code, Error handling, Debugging,
-                fixing problems.Client Interaction about the project.{" "}
+                Fresh, Commentable, Clean Code, Error handling, Debugging, fixing problems.Client Interaction about the
+                project.{" "}
               </h3>
             </div>
           </div>
@@ -122,8 +120,7 @@ const TimeLine = () => {
               {/* <!-- Content that showing in the box --> */}
               <div className="flex-auto">
                 <h3 className="mb-3 font-bold dark:text-gray-200 text-xl">
-                  Web Design and ,React .Js ,Fronted,Junior Mern Stack
-                  Developer.
+                  Web Design and ,React .Js ,Fronted,Junior Mern Stack Developer.
                 </h3>
               </div>
             </div>
@@ -154,8 +151,7 @@ const TimeLine = () => {
               {/* <!-- Content that showing in the box --> */}
               <div className="flex-auto">
                 <h3 className="mb-3 font-bold dark:text-gray-200 text-xl">
-                  Process improvement,workflow optimization.User Requirement
-                  Gathering.
+                  Process improvement,workflow optimization.User Requirement Gathering.
                 </h3>
               </div>
             </div>
@@ -170,8 +166,8 @@ const TimeLine = () => {
               {/* <!-- Content that showing in the box --> */}
               <div className="flex-auto">
                 <h3 className="mb-3 font-bold dark:text-gray-200 text-xl">
-                  Fresh, Commentable, Clean Code, Error handling, Debugging,
-                  fixing problems.Client Interaction about the project.{" "}
+                  Fresh, Commentable, Clean Code, Error handling, Debugging, fixing problems.Client Interaction about
+                  the project.{" "}
                 </h3>
               </div>
             </div>

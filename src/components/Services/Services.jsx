@@ -1,16 +1,12 @@
 import { useState } from "react"; // Import useState
 import { data } from "./data.js";
 
-import { motion, AnimatePresence } from "framer-motion";
-
 const Services = () => {
   const [showFullDescriptions, setShowFullDescriptions] = useState([]);
 
   const toggleDescription = (itemId) => {
     if (showFullDescriptions.includes(itemId)) {
-      setShowFullDescriptions(
-        showFullDescriptions.filter((id) => id !== itemId)
-      );
+      setShowFullDescriptions(showFullDescriptions.filter((id) => id !== itemId));
     } else {
       setShowFullDescriptions([...showFullDescriptions, itemId]);
     }
@@ -27,8 +23,7 @@ const Services = () => {
           Provide Best <span className="text-primary">Services</span>
         </h2>
         <p className="lg:max-w-lg dark:text-gray-200 text-gray-500 mb-16">
-          You will get 100% full service of work assured until you are fully
-          satisfied
+          You will get 100% full service of work assured until you are fully satisfied
         </p>
       </div>
 
@@ -40,23 +35,19 @@ const Services = () => {
             <div
               key={index}
               className={` duration-500 transition-all border-primary border-opacity-70 ${
-                item.id == 3
-                  ? "md:border-0"
-                  : item.id == 6
-                  ? "md:border-0"
-                  : "md:border-r"
+                item.id == 3 ? "md:border-0" : item.id == 6 ? "md:border-0" : "md:border-r"
               }`}
             >
               <h2 className="text-xl border-opacity-60 border-primary dark:bg-gray-900 text-primary font-bold border w-10 h-10 flex items-center justify-center rounded-full">
                 {item.id}
               </h2>
-              <h2 className="text-xl font-bold dark:text-gray-200 mt-5">
-                {item.title}
-              </h2>
-              <p className="dark:text-gray-400 mt-2 text-sm font-medium text-gray-500">
-                {isDescriptionVisible
-                  ? item.description
-                  : item.description.slice(0, 110)}
+              <h2 className="text-xl font-bold dark:text-gray-200 mt-5">{item.title}</h2>
+              <p
+                className={`dark:text-gray-400 duration-500 transition-all mt-2 text-sm font-medium text-gray-500 ${
+                  isDescriptionVisible ? "h-36" : "h-14"
+                }`}
+              >
+                {isDescriptionVisible ? item.description : item.description.slice(0, 110)}
               </p>
               <button
                 onClick={() => toggleDescription(item.id)} // Toggle description visibility

@@ -1,8 +1,7 @@
 import Image from "next/image";
-import img from "../../assets/img/Group 376.png";
 import Link from "next/link";
-import styles from "../../styles/Custome/custom.module.css";
 import { FaChevronRight } from "react-icons/fa";
+import img from "../../assets/img/Group 376.png";
 
 const About = () => {
   return (
@@ -23,26 +22,21 @@ const About = () => {
           </div>
 
           <p className="dark:text-gray-300  text-gray-500 mb-2">
-            I am an enthusiastic and proactive self-taught developer and problem
-            solver who is passionate about technologies.Proficient in HTML5,
-            CSS3, and JavaScript, I bring a modern touch to frontend
-            development. From optimizing website performance to delivering
-            exceptional loading speed.
+            I am an enthusiastic and proactive self-taught developer and problem solver who is passionate about
+            technologies.Proficient in HTML5, CSS3, and JavaScript, I bring a modern touch to frontend development. From
+            optimizing website performance to delivering exceptional loading speed.
           </p>
 
           <p className="dark:text-gray-300 text-gray-500 font-medium mb-2">
-            Mobile-first designs and cross-platform compatibility are my
-            specialties.Continuously updated with the latest trends and best
-            practices, I enhance development processes backend functionalities
-            through RESTful APIs.I make teamwork effort. SEO knowledge is a
-            valuable addition, boosting frontend elements for improved search
-            engine rankings.
+            Mobile-first designs and cross-platform compatibility are my specialties.Continuously updated with the
+            latest trends and best practices, I enhance development processes backend functionalities through RESTful
+            APIs.I make teamwork effort. SEO knowledge is a valuable addition, boosting frontend elements for improved
+            search engine rankings.
           </p>
 
           <p className="dark:text-gray-300 text-gray-500 font-medium mb-2">
-            I am motivated to learn, adapt and complete tasks in a timely
-            manner.I am fronted React/Next Js Developer.I have 2 years work
-            experience.
+            I am motivated to learn, adapt and complete tasks in a timely manner.I am fronted React/Next Js Developer.I
+            have 2 years work and professional experience.
           </p>
 
           <div className="inline-block ">
