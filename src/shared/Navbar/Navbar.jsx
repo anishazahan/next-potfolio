@@ -212,7 +212,7 @@ const Navbar = () => {
         {/* // for mobile */}
 
         {isMenuOpen && (
-          <div className=" navbar-menu relative z-50 lg:hidden">
+          <div className="duration-500 transition-all navbar-menu relative z-50 lg:hidden">
             <div className=" fixed inset-0 bg-transparent"></div>
             <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-zinc-900 border-r overflow-y-auto">
               <div className="flex items-center justify-between mb-8">

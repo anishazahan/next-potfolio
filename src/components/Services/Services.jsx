@@ -39,7 +39,7 @@ const Services = () => {
           return (
             <div
               key={index}
-              className={`  border-primary border-opacity-70 ${
+              className={` duration-500 transition-all border-primary border-opacity-70 ${
                 item.id == 3
                   ? "md:border-0"
                   : item.id == 6
