@@ -1,8 +1,8 @@
-import RootLayout from "@/components/layout/RootLayout.jsx";
 import Image from "next/image"; // Added `Image` import
 import Link from "next/link"; // Added `Link` import
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react"; // Added `useState` import
+import RootLayout from "../../components/layout/RootLayout.jsx";
 import { data } from "../../components/Projects/data.js";
 import LoadingComponent from "./LoadingComponent.jsx";
 
