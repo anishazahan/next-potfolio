@@ -1,7 +1,7 @@
-import TimeLine from "@/components/Home/TimeLine";
-import Services from "@/components/Services/Services";
-import RootLayout from "@/components/layout/RootLayout";
 import React from "react";
+import TimeLine from "../../components/Home/TimeLine";
+import Services from "../../components/Services/Services";
+import RootLayout from "../../components/layout/RootLayout";
 
 const ServiceHome = () => {
   return (

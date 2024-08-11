@@ -1,9 +1,9 @@
-import About from "@/components/About/About";
-import CountDown from "@/components/Home/CountDown";
-import Testimonial from "@/components/Home/Testimonial";
-import Skills from "@/components/Skills/Skills";
-import RootLayout from "@/components/layout/RootLayout";
 import React from "react";
+import About from "../../components/About/About";
+import CountDown from "../../components/Home/CountDown";
+import Testimonial from "../../components/Home/Testimonial";
+import RootLayout from "../../components/layout/RootLayout";
+import Skills from "../../components/Skills/Skills";
 
 const AboutHomePage = () => {
   return (

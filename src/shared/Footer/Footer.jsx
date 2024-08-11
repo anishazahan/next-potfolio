@@ -1,17 +1,11 @@
-import {
-  FaFacebookSquare,
-  FaLinkedin,
-  FaSkype,
-  FaGooglePlus,
-} from "react-icons/fa";
 // import "./Footer.css"
-import Link from "next/link";
 import Image from "next/image";
-import darkLogo from "../../assets/img/Group 381.png";
-import { BsFacebook } from "react-icons/bs";
+import Link from "next/link";
 import { AiFillSkype } from "react-icons/ai";
+import { BsFacebook } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
+import darkLogo from "../../assets/img/Group 381.png";
 
 const Footer = () => {
   return (
@@ -21,8 +15,7 @@ const Footer = () => {
           <div>
             <Image width="" height="" src={darkLogo} alt="" />
             <p className="max-w-xs mt-4 text-sm text-gray-400">
-              You will get 100% full service of work assured until you are fully
-              satisfied
+              You will get 100% full service of work assured until you are fully satisfied
             </p>
             <div className="flex items-center space-x-2 mt-4">
               <Link
@@ -53,28 +46,29 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
             <div>
-              <p className="font-semibold uppercase text-gray-300 border-b-2 border-primary inline-block">
+              <Link
+                href="/about"
+                className="font-semibold uppercase text-gray-300 border-b-2 border-primary inline-block"
+              >
                 About
-              </p>
+              </Link>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-400">
-                <Link className="hover:opacity-75" href="/About">
+                <Link href="/about" className="hover:opacity-75">
                   About
                 </Link>
-                <Link className="hover:opacity-75" href="/About">
+                <Link href="/about" className="hover:opacity-75">
                   Courses
                 </Link>
-                <Link className="hover:opacity-75" href="/About">
+                <Link href="/about" className="hover:opacity-75">
                   Certificate
                 </Link>
-                <Link className="hover:opacity-75" href="/project">
+                <Link href="/project" className="hover:opacity-75">
                   Project
                 </Link>
               </nav>
             </div>
             <div>
-              <p className="font-semibold uppercase text-gray-300 border-b-2 border-primary inline-block">
-                Services
-              </p>
+              <p className="font-semibold uppercase text-gray-300 border-b-2 border-primary inline-block">Services</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-400">
                 <Link className="hover:opacity-75" href="/">
                   Web Design
@@ -113,9 +107,7 @@ const Footer = () => {
               </nav>
             </div>
             <div>
-              <p className="font-semibold uppercase text-gray-300 border-b-2 border-primary inline-block">
-                Legal
-              </p>
+              <p className="font-semibold uppercase text-gray-300 border-b-2 border-primary inline-block">Legal</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-400">
                 <Link className="hover:opacity-75" href="/project">
                   Privacy Policy
@@ -135,9 +127,7 @@ const Footer = () => {
         </div>
       </div>
       <h2 className="text-center text-sm text-gray-300 pb-8">
-        Copyright &copy; By{" "}
-        <span className="text-primary font-bold">Anisha Zahan </span>{" "}
-        {new Date().getFullYear()}
+        Copyright &copy; By <span className="text-primary font-bold">Anisha Zahan </span> {new Date().getFullYear()}
       </h2>
     </footer>
   );

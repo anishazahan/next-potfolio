@@ -1,7 +1,7 @@
-import Contact from "@/components/Contact/ContactForm";
-import Friends from "@/components/Contact/Friends";
-import RootLayout from "@/components/layout/RootLayout";
 import React from "react";
+import Contact from "../../components/Contact/ContactForm";
+import Friends from "../../components/Contact/Friends";
+import RootLayout from "../../components/layout/RootLayout";
 
 const ContactHome = () => {
   return (

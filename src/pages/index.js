@@ -1,8 +1,7 @@
-import RootLayout from "@/components/layout/RootLayout";
-import Project from "./project";
-import Cursor from "@/shared/Cursor";
-import HomePage from "@/components/Home/HomePage";
-import ScrollToTopButton from "@/shared/ScrollToTopButton";
+import HomePage from "../components/Home/HomePage";
+import RootLayout from "../components/layout/RootLayout";
+import Cursor from "../shared/Cursor";
+import ScrollToTopButton from "../shared/ScrollToTopButton";
 
 const Home = () => {
   return (

@@ -1,8 +1,7 @@
-import Footer from "@/shared/Footer/Footer";
-import Navbar from "@/shared/Navbar/Navbar";
 import { useTheme } from "next-themes";
 import NextTopLoader from "nextjs-toploader";
-import { useState } from "react";
+import Footer from "../../shared/Footer/Footer";
+import Navbar from "../../shared/Navbar/Navbar";
 
 const RootLayout = ({ children }) => {
   const { theme } = useTheme();

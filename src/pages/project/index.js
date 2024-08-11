@@ -1,27 +1,7 @@
-import {
-  useDeleteProjectMutation,
-  useGetProjectQuery,
-} from "@/Redux/features/projectApi";
-import Image from "next/image";
-import Link from "next/link";
-import UpdateProject from "./UpdateProject";
-import RootLayout from "@/components/layout/RootLayout";
-import Projects from "@/components/Projects/Projects";
+import RootLayout from "../../components/layout/RootLayout";
+import Projects from "../../components/Projects/Projects";
 
 const Project = () => {
-  const { data, isLoading, isError, error } = useGetProjectQuery();
-  const [deleteProject, { isLoading: isDeleting }] = useDeleteProjectMutation();
-  console.log("this is data", data?.data);
-
-  const handleDeleteProject = async (projectId) => {
-    try {
-      await deleteProject(projectId);
-      // Optionally, you can trigger a re-fetch of the data here to update the UI
-    } catch (error) {
-      // Handle the error if the delete request fails
-    }
-  };
-
   return (
     // <div className="custom-container my-24">
     //   {data?.data?.map((item, index) => {
