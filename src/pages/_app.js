@@ -1,5 +1,5 @@
-import "@/styles/globals.css";
 import { ThemeProvider } from "next-themes";
+import "../styles/globals.css";
 
 import { SessionProvider } from "next-auth/react";
 
