@@ -28,20 +28,9 @@ const Navbar = () => {
 
   const navbarBgClass = theme === "dark" ? "navbar_dark_bg" : theme === "light" ? "navbar_light_bg" : "navbar_dark_bg;";
 
-  console.log(theme);
-
   return (
     <div className={``}>
-      <div
-        // className={`${
-        //   theme === "dark"
-        //     ? "bg-[url('/src/assets/img/Group 377.png')]"
-        //     : "bg-[url('/src/assets/img/Group 377 (1).png')]"
-        // } bg-no-repeat bg-cover bg-center m-auto`}
-        className={`${
-          navbarBgClass ? navbarBgClass : "bg-[url('/src/assets/img/Group 377.png')]"
-        } bg-no-repeat bg-cover bg-center m-auto`}
-      >
+      <div className={` navbar_dark_bg  bg-no-repeat bg-cover bg-center m-auto `}>
         <div className="shadow bg-gray-900">
           <nav className=" z-10 custom-container  py-5  flex justify-between  items-center ">
             <Link href="/" className="flex items-center">

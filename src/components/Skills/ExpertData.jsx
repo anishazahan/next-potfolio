@@ -1,7 +1,8 @@
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact } from "react-icons/fa";
-import { BsFiletypeScss } from "react-icons/bs";
 import { BiLogoTailwindCss } from "react-icons/bi";
+import { BsFiletypeScss } from "react-icons/bs";
+import { FaBootstrap, FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
+import { SiNextdotjs } from "react-icons/si";
 import { TbBrandRedux, TbBrandTypescript } from "react-icons/tb";
 
 const ExpertData = () => {
@@ -49,6 +50,12 @@ const ExpertData = () => {
             <FaReact></FaReact>
           </button>
           <h2 className="dark:text-gray-200 font-bold">React Js</h2>
+        </div>
+        <div className="border px-10 py-5 dark:border-0 dark:bg-gray-900 border-opacity-20 shadow hover:border-opacity-100 text-center">
+          <button className="text-6xl text-primary font-bold">
+            <SiNextdotjs />
+          </button>
+          <h2 className="dark:text-gray-200 font-bold">Next Js</h2>
         </div>
         <div className="border px-10 py-5 dark:border-0 dark:bg-gray-900 border-opacity-20 shadow hover:border-opacity-100 text-center">
           <button className="text-6xl text-primary font-bold">

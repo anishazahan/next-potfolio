@@ -1,14 +1,9 @@
 import Link from "next/link";
-import img from "../../assets/img/Group 369.png";
-import Image from "next/image";
-import { BsFacebook } from "react-icons/bs";
 import { AiFillSkype } from "react-icons/ai";
+import { BsFacebook } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import resume from "./resume.pdf";
-import ChangeColor from "../layout/ChangeColor";
-import { gsap } from "gsap";
-import { useEffect } from "react";
 
 const HomeBanner = () => {
   // useEffect(() => {
@@ -28,20 +23,17 @@ const HomeBanner = () => {
       </div> */}
       <div className="flex justify-center text-center items-center">
         <div className="">
-          <h2 className="dark:text-gray-200 font-semibold mb-3">
-            Hey, I am Anisha Zahan Hashi{" "}
-          </h2>
+          <h2 className="dark:text-gray-200 text-gray-100 font-semibold mb-3">Hey, I am Anisha Zahan Hashi </h2>
           <h2
             data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="200"
-            className="text-5xl dark:text-gray-200 font-bold mx-auto text-center pb-6"
+            className="text-5xl text-gray-200 font-bold mx-auto text-center pb-6"
           >
             Expert <span className="text-primary">Frontend </span> Developer
           </h2>
-          <p className="dark:text-gray-200 text-center mx-auto font-medium max-w-2xl pb-4">
-            I am Frontend Developer with 2 years work experience.I will
-            customize your website as your creative choice.
+          <p className="dark:text-gray-200 text-center mx-auto font-medium max-w-xl pb-4">
+            I am Frontend Developer with 2 years work experience.I will customize your website as your creative choice.
           </p>
           <div className="flex justify-center space-x-5 items-center mt-5 pb-10">
             <Link

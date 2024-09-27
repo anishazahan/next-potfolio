@@ -6,11 +6,17 @@ import Navbar from "../../shared/Navbar/Navbar";
 const RootLayout = ({ children }) => {
   const { theme } = useTheme();
   return (
-    <div className={`dark:bg-gray-800  ${theme === "dark" ? "dark" : ""}`}>
+    <div className={`dark:bg-gray-800  `}>
       <Navbar></Navbar>
       <NextTopLoader color="#5036E1" height={4} />
-
-      <div className={` theme-${theme}`}>{children}</div>
+      {/* theme-${theme} */}
+      <div
+        className={`
+    
+         `}
+      >
+        {children}
+      </div>
       <Footer></Footer>
     </div>
   );

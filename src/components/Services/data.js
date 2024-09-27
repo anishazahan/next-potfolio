@@ -7,7 +7,7 @@ export const data = [
   },
   {
     id: 2,
-    title: "Frontend Development",
+    title: "Frontend Development (React/Next js)",
     description:
       "Crafting Digital Experiences with Next.js and api integration: Elevate your online presence with our tailored frontend development service. We're the architects behind captivating user interfaces, powered by the innovation of Next.js. Let's bring your ideas to life, pixel by pixel.",
   },

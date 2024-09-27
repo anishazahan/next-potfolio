@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ExpertData from "./ExpertData";
 import ComfortableData from "./ComfortableData";
-import Tools from "./Tools";
+import ExpertData from "./ExpertData";
 import Familear from "./Familear";
+import Tools from "./Tools";
 
 const Skills = () => {
   const [activeSection, setActiveSection] = useState("expert");
@@ -47,10 +47,10 @@ const Skills = () => {
         </button>
         <button
           onClick={() => setActiveSection("comfortable")}
-          className={`px-9 py-3 rounded-sm ${
+          className={`px-9 py-3 rounded-sm   ${
             activeSection === "comfortable"
-              ? "bg-primary text-white"
-              : "dark:bg-gray-900 bg-gray-200 dark:text-white text-black"
+              ? "bg-primary text-white font-semibold"
+              : "dark:bg-gray-900 bg-gray-200 dark:text-white text-black "
           }`}
         >
           Comfortable
@@ -59,7 +59,7 @@ const Skills = () => {
           onClick={() => setActiveSection("familiar")}
           className={`px-9 py-3 rounded-sm ${
             activeSection === "familiar"
-              ? "bg-primary text-white"
+              ? "bg-primary text-white  font-semibold"
               : "dark:bg-gray-900 bg-gray-200 dark:text-white text-black"
           }`}
         >
@@ -69,7 +69,7 @@ const Skills = () => {
           onClick={() => setActiveSection("tools")}
           className={`px-9 py-3 rounded-sm ${
             activeSection === "tools"
-              ? "bg-primary text-white"
+              ? "bg-primary text-white font-semibold"
               : "dark:bg-gray-900 bg-gray-200 dark:text-white text-black"
           }`}
         >

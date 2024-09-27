@@ -21,30 +21,31 @@ const About = () => {
             </h2>
           </div>
 
-          <p className="dark:text-gray-300  text-gray-500 mb-2">
-            I am an enthusiastic and proactive self-taught developer and problem solver who is passionate about
-            technologies.Proficient in HTML5, CSS3, and JavaScript, I bring a modern touch to frontend development. From
-            optimizing website performance to delivering exceptional loading speed.
+          <p className="dark:text-gray-300  text-gray-500 mb-3">
+            I am a passionate and self-driven Frontend Developer with 2 years of professional experience, specializing
+            in <b>React and Next.js.</b> I have a strong foundation in HTML5, CSS3,Tailwind, and JavaScript, allowing me
+            to create modern, responsive, and high-performance web applications. My expertise lies in developing
+            mobile-first designs and ensuring cross-platform compatibility, ensuring seamless experiences across all
+            devices. I am proficient in integrating RESTful APIs and optimizing frontend-backend communication for
+            smooth and efficient data handling.
           </p>
 
-          <p className="dark:text-gray-300 text-gray-500 font-medium mb-2">
-            Mobile-first designs and cross-platform compatibility are my specialties.Continuously updated with the
-            latest trends and best practices, I enhance development processes backend functionalities through RESTful
-            APIs.I make teamwork effort. SEO knowledge is a valuable addition, boosting frontend elements for improved
-            search engine rankings.
+          <p className="dark:text-gray-300 text-gray-500 font-medium mb-3">
+            I enhance development processes backend functionalities through RESTful APIs.I make teamwork effort. SEO
+            knowledge is a valuable addition, boosting frontend elements for improved search engine rankings.
           </p>
 
-          <p className="dark:text-gray-300 text-gray-500 font-medium mb-2">
+          <p className="dark:text-gray-300 text-gray-500 font-medium ">
             I am motivated to learn, adapt and complete tasks in a timely manner.I am fronted React/Next Js Developer.I
-            have 2 years work and professional experience.
+            have 2 years work and <b>professional experience</b>.
           </p>
 
           <div className="inline-block ">
             <Link
               href="/project"
-              className="group hover:bg-primary bg-gray-200 dark:bg-gray-700 pr-7 duration-300 rounded-full mt-10 flex items-center space-x-2"
+              className="group hover:bg-primary bg-gray-200 dark:bg-gray-700 pr-7 duration-500 ease-linear dark:hover:bg-primary rounded-full mt-10 flex items-center space-x-2"
             >
-              <button className="p-4 bg-primary rounded-full text-xl text-gray-200">
+              <button className="p-4  bg-primary dark:group-hover:bg-black duration-500 rounded-full text-xl text-gray-200">
                 <FaChevronRight></FaChevronRight>
               </button>
               <button className="dark:text-gray-300 group-hover:text-white font-semibold text-black ">
