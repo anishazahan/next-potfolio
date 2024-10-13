@@ -1,126 +1,100 @@
+import ecommerce from "../../assets/img/project/e-coomerce.PNG";
+import event from "../../assets/img/project/Eventrax.png";
+import BD from "../../assets/img/project/Group 10.png";
+import best from "../../assets/img/project/Group 13.png";
+import todo from "../../assets/img/project/Group 14.png";
+import personalPortfolioHR from "../../assets/img/project/Group 16.png";
 import quize from "../../assets/img/project/Group 17.png";
-import quizeDetails from "../../assets/img/project/Screenshot 2023-08-29 at 17-32-45 Quiz App.png";
-import youtube from "../../assets/img/project/Rectangle 53.png";
+import arc from "../../assets/img/project/Group 3.png";
+import personalPortfolio from "../../assets/img/project/Group 4.png";
 import influencer from "../../assets/img/project/Group 6.png";
 import muslime from "../../assets/img/project/Group 8.png";
-import muslimeDetails from "../../assets/img/project/Screenshot 2023-08-29 at 17-42-27 Muslime Ummah.png";
-import personalPortfolio from "../../assets/img/project/Group 4.png";
-import best from "../../assets/img/project/Group 13.png";
-import bestDetails from "../../assets/img/project/Screenshot 2023-08-29 at 17-41-15 Best Choice.png";
-import BD from "../../assets/img/project/Group 10.png";
 import BTS from "../../assets/img/project/Group 9.png";
-import arc from "../../assets/img/project/Group 3.png";
-import todo from "../../assets/img/project/Group 14.png";
-import todoDetails from "../../assets/img/project/Screenshot 2023-08-29 at 14-48-36 Vite React TS.png";
-import arcD from "../../assets/img/project/Screenshot 2023-08-29 at 14-48-11 Bauhaus Architecture.png";
-import BTSD from "../../assets/img/project/Screenshot 2023-08-29 at 14-46-06 BTS.png";
-import BDD from "../../assets/img/project/Screenshot 2023-08-29 at 14-45-03 CoursesBD.png";
-import personalPortfolioHR from "../../assets/img/project/Group 16.png";
-import personalPortfolioHRDetails from "../../assets/img/project/Screenshot 2023-08-29 at 14-43-36 HR Limon.png";
-import personalPortfolioDetails from "../../assets/img/project/Screenshot 2023-08-29 at 14-41-53 Anisha Zahan.png";
-import event from "../../assets/img/project/Eventrax.png";
-import calculate from "../../assets/img/project/Rectangle 53.png";
+import editor from "../../assets/img/project/image-editor.png";
+import youtube from "../../assets/img/project/Rectangle 53.png";
 import youtubeDetails from "../../assets/img/project/screencapture-youtube-vedio-downloader-orcin-vercel-app-2023-08-29-14_33_54.png";
+import personalPortfolioDetails from "../../assets/img/project/Screenshot 2023-08-29 at 14-41-53 Anisha Zahan.png";
+import personalPortfolioHRDetails from "../../assets/img/project/Screenshot 2023-08-29 at 14-43-36 HR Limon.png";
+import BDD from "../../assets/img/project/Screenshot 2023-08-29 at 14-45-03 CoursesBD.png";
+import BTSD from "../../assets/img/project/Screenshot 2023-08-29 at 14-46-06 BTS.png";
+import arcD from "../../assets/img/project/Screenshot 2023-08-29 at 14-48-11 Bauhaus Architecture.png";
+import todoDetails from "../../assets/img/project/Screenshot 2023-08-29 at 14-48-36 Vite React TS.png";
+import quizeDetails from "../../assets/img/project/Screenshot 2023-08-29 at 17-32-45 Quiz App.png";
+import bestDetails from "../../assets/img/project/Screenshot 2023-08-29 at 17-41-15 Best Choice.png";
+import muslimeDetails from "../../assets/img/project/Screenshot 2023-08-29 at 17-42-27 Muslime Ummah.png";
 
 export const data = [
+  // {
+  //   id: "1",
+  //   img: quize,
+  //   detailsImg: quizeDetails,
+  //   name: "Multivendor Ecommerce Dashboard",
+  //   description: [
+  //     "Implement MVC architecture , Schema designs for questions and results, use Mongoose.",
+  //     "If you don't enter your username, you will not be able to participate in the quiz,and show How many quizzes have you answered in total and your final achieved result.",
+  //     "Use Custom hook, dynamic route, React Redux ,Load data dynamic way with loading.",
+  //     "Use Tailwind. Beautiful UI design,Responsive for all devices.Clean code with necessary comments.",
+  //   ],
+  //   useTecnology: ["Tailwind", "Axios", "Redux", "Node Js", " Express Js", "Mongoose"],
+  //   live: "https://quiz-application.onrender.com/",
+  //   code: "https://github.com/anishazahan/Quize-app",
+  //   server: "https://github.com/anishazahan/Quiz-app-server",
+  //   type: "Fullstack",
+  // },
   {
     id: "1",
-    img: quize,
-    detailsImg: quizeDetails,
-    name: "Multivendor Ecommerce Dashboard",
-    description: [
-      "Implement MVC architecture , Schema designs for questions and results, use Mongoose.",
-      "If you don't enter your username, you will not be able to participate in the quiz,and show How many quizzes have you answered in total and your final achieved result.",
-      "Use Custom hook, dynamic route, React Redux ,Load data dynamic way with loading.",
-      "Use Tailwind. Beautiful UI design,Responsive for all devices.Clean code with necessary comments.",
-    ],
-    useTecnology: [
-      "Tailwind",
-      "Axios",
-      "Redux",
-      "Node Js",
-      " Express Js",
-      "Mongoose",
-    ],
-    live: "https://quiz-application.onrender.com/",
-    code: "https://github.com/anishazahan/Quize-app",
-    server: "https://github.com/anishazahan/Quiz-app-server",
-    type: "Fullstack",
-  },
-  {
-    id: "1",
-    img: quize,
-    detailsImg: quizeDetails,
+    img: ecommerce,
+    detailsImg: ecommerce,
     name: "Multivendor E-Commerce",
     description: [
-      "Implement MVC architecture , Schema designs for questions and results, use Mongoose.",
-      "If you don't enter your username, you will not be able to participate in the quiz,and show How many quizzes have you answered in total and your final achieved result.",
-      "Use Custom hook, dynamic route, React Redux ,Load data dynamic way with loading.",
-      "Use Tailwind. Beautiful UI design,Responsive for all devices.Clean code with necessary comments.",
+      "User Login ,Register  and Logout,add to cart,add to wishlist,add Product review,buy product",
+      "Show cart product with shop name,customer to seller real time chat ,User see cart ,wishlist,order,chat in your dashboard,Filter product with category, rating , price",
+      "Search , pagination , show latest , related , highest price product with row and grid system.",
     ],
     useTecnology: [
       "Tailwind",
+      "React Js",
       "Axios",
-      "Redux",
-      "Node Js",
-      " Express Js",
-      "Mongoose",
+      "Redux toolkit",
+      "stripe",
+      "socket-io",
+      "jwt",
+      "cloudinary",
+      "express",
+      "mongoose",
+      "formidable",
+      "bcrypt",
+      "react - apexChart",
+      "spinners",
+      "lazyload",
+      "multi carousel",
+      "hot-toast",
+      "window",
+      "range",
+      "rating",
+      "swiper",
+      "moment",
+      "and other",
     ],
-    live: "https://quiz-application.onrender.com/",
-    code: "https://github.com/anishazahan/Quize-app",
-    server: "https://github.com/anishazahan/Quiz-app-server",
+    live: "https://multivendor-ecommerce-frontend-git-main-anishazahan.vercel.app/",
+    code: "https://github.com/anishazahan/Multivendor-ecommerce-frontend",
+    server: "https://github.com/anishazahan/multivendor-ecommerce-backend",
     type: "Fullstack",
   },
+
   {
-    id: "1",
-    img: quize,
-    detailsImg: quizeDetails,
-    name: "Employ Manangment Application ",
-    description: [
-      "Implement MVC architecture , Schema designs for questions and results, use Mongoose.",
-      "If you don't enter your username, you will not be able to participate in the quiz,and show How many quizzes have you answered in total and your final achieved result.",
-      "Use Custom hook, dynamic route, React Redux ,Load data dynamic way with loading.",
-      "Use Tailwind. Beautiful UI design,Responsive for all devices.Clean code with necessary comments.",
-    ],
-    useTecnology: [
-      "Tailwind",
-      "Axios",
-      "Redux",
-      "Node Js",
-      " Express Js",
-      "Mongoose",
-    ],
-    live: "https://quiz-application.onrender.com/",
-    code: "https://github.com/anishazahan/Quize-app",
-    server: "https://github.com/anishazahan/Quiz-app-server",
-    type: "Fullstack",
-  },
-  {
-    id: "1",
-    img: quize,
-    detailsImg: quizeDetails,
+    id: "2",
+    img: editor,
+    detailsImg: editor,
     name: "Image Editor",
-    description: [
-      "Implement MVC architecture , Schema designs for questions and results, use Mongoose.",
-      "If you don't enter your username, you will not be able to participate in the quiz,and show How many quizzes have you answered in total and your final achieved result.",
-      "Use Custom hook, dynamic route, React Redux ,Load data dynamic way with loading.",
-      "Use Tailwind. Beautiful UI design,Responsive for all devices.Clean code with necessary comments.",
-    ],
-    useTecnology: [
-      "Tailwind",
-      "Axios",
-      "Redux",
-      "Node Js",
-      " Express Js",
-      "Mongoose",
-    ],
-    live: "https://quiz-application.onrender.com/",
-    code: "https://github.com/anishazahan/Quize-app",
-    server: "https://github.com/anishazahan/Quiz-app-server",
+    description: ["Upload image", "Cropping,reset,save,rotate ,flip,filter and other functionality"],
+    useTecnology: ["HTML", "Javascript", "SCSS"],
+    live: "https://image-editor-snowy.vercel.app/",
+    code: "https://github.com/anishazahan/Image-Editor",
     type: "Fullstack",
   },
   {
-    id: "1",
+    id: "3",
     img: quize,
     detailsImg: quizeDetails,
     name: "Quiz App",
@@ -130,27 +104,18 @@ export const data = [
       "Use Custom hook, dynamic route, React Redux ,Load data dynamic way with loading.",
       "Use Tailwind. Beautiful UI design,Responsive for all devices.Clean code with necessary comments.",
     ],
-    useTecnology: [
-      "Tailwind",
-      "Axios",
-      "Redux",
-      "Node Js",
-      " Express Js",
-      "Mongoose",
-    ],
+    useTecnology: ["Tailwind", "Axios", "Redux", "Node Js", " Express Js", "Mongoose"],
     live: "https://quiz-application.onrender.com/",
     code: "https://github.com/anishazahan/Quize-app",
     server: "https://github.com/anishazahan/Quiz-app-server",
     type: "Fullstack",
   },
   {
-    id: "2",
+    id: "4",
     img: youtube,
     detailsImg: youtubeDetails,
     name: "Youtube Video Download",
-    description: [
-      "Give in input Youtube video url link,select regulation and click download button",
-    ],
+    description: ["Give in input Youtube video url link,select regulation and click download button"],
     useTecnology: ["Tailwind", "Next Js", "Typescript", "Axios", "Node Js"],
     live: "https://youtube-vedio-downloader-orcin.vercel.app/",
     code: "https://github.com/anishazahan/vedio-downloader-extension-client",
@@ -158,7 +123,7 @@ export const data = [
     type: "Fullstack",
   },
   {
-    id: "3",
+    id: "5",
     img: best,
     detailsImg: bestDetails,
     name: "Best Choice Ecommerce",
@@ -168,15 +133,7 @@ export const data = [
       "Use Custom hook, dynamic route, Swiper slider.Load data dynamic way.",
       "Beautiful UI design,Clean code with necessary comments.",
     ],
-    useTecnology: [
-      "Tailwind",
-      "React router",
-      "Axios",
-      "Swiper slider",
-      "Node Js",
-      " Express Js",
-      "Mongoose",
-    ],
+    useTecnology: ["Tailwind", "React router", "Axios", "Swiper slider", "Node Js", " Express Js", "Mongoose"],
     live: "https://best-choice.vercel.app/",
     code: "https://github.com/anishazahan/Best-Choice",
     server: "https://github.com/anishazahan/Best-Choice-server",
@@ -184,7 +141,7 @@ export const data = [
   },
 
   {
-    id: "4",
+    id: "6",
     img: BD,
     detailsImg: BDD,
     name: "BD Courses",
@@ -194,14 +151,7 @@ export const data = [
       "Use Custom hook, dynamic route, Swiper slider.Load data dynamic way.",
       "Beautiful UI design,Clean code with necessary comments.",
     ],
-    useTecnology: [
-      "Tailwind",
-      "React router",
-      "Axios",
-      "Swiper slider",
-      "Moment js",
-      "Aos animation",
-    ],
+    useTecnology: ["Tailwind", "React router", "Axios", "Swiper slider", "Moment js", "Aos animation"],
     live: "https://bd-courses.vercel.app/",
     code: "https://github.com/anishazahan/BD-Courses",
     server: "",
@@ -209,7 +159,7 @@ export const data = [
   },
 
   {
-    id: "5",
+    id: "7",
     img: event,
     detailsImg: event,
     name: "Eventrox",
@@ -227,7 +177,7 @@ export const data = [
   },
 
   {
-    id: "6",
+    id: "8",
     img: muslime,
     detailsImg: muslimeDetails,
     name: "Muslime Ummah",
@@ -255,16 +205,11 @@ export const data = [
   },
 
   {
-    id: "7",
+    id: "9",
     img: todo,
     detailsImg: todoDetails,
     name: "Todo App React Typescript",
-    description: [
-      "User add todo",
-      "User delete todo",
-      "Beautiful Design",
-      "Responsive Design",
-    ],
+    description: ["User add todo", "User delete todo", "Beautiful Design", "Responsive Design"],
     useTecnology: ["Html", "Css", "Tailwind"],
     live: "https://todo-app-react-typescript-65ia.vercel.app/",
     code: "https://github.com/anishazahan/todo-app-react-typescript",
@@ -273,7 +218,7 @@ export const data = [
   },
 
   {
-    id: "8",
+    id: "10",
     img: personalPortfolioHR,
     detailsImg: personalPortfolioHRDetails,
     name: "Personal Portfolio(HR)",
@@ -290,7 +235,7 @@ export const data = [
   },
 
   {
-    id: "9",
+    id: "11",
     img: personalPortfolio,
     detailsImg: personalPortfolioDetails,
     name: " Portfolio",
@@ -308,15 +253,10 @@ export const data = [
   },
 
   {
-    id: "8",
+    id: "12",
     img: "https://i.ibb.co/RcFjD8D/Screenshot-2022-11-30-at-22-16-31-Form-with-SASS.png",
     name: "form-styling-with-sass",
-    description: [
-      "Beautiful Design",
-      "Responsive Design",
-      "adding Sass",
-      "Using raw html css code",
-    ],
+    description: ["Beautiful Design", "Responsive Design", "adding Sass", "Using raw html css code"],
     useTecnology: ["Html", "CSS", "SASS"],
     live: "https://form-styling-with-sass.vercel.app/",
     code: "https://github.com/anishazahan/form-styling-with-sass",
@@ -341,10 +281,9 @@ export const data = [
   // },
 
   {
-    id: "10",
+    id: "13",
     img: influencer,
-    detailsImg:
-      "https://i.ibb.co/gywTnBB/Screenshot-2022-12-01-at-16-42-12-Influencer-Gears.png",
+    detailsImg: "https://i.ibb.co/gywTnBB/Screenshot-2022-12-01-at-16-42-12-Influencer-Gears.png",
     name: "Influencer-Gear",
     description: [
       "Beautiful Design",
@@ -397,7 +336,7 @@ export const data = [
     type: "Frontend",
   },
   {
-    id: "12",
+    id: "14",
     img: arc,
     detailsImg: arcD,
     name: "Architecture Service",

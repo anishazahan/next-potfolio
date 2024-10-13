@@ -53,9 +53,11 @@ const ProjectDetails = () => {
                 </Link>
               </h2>
               <h2 className="font-semibold underline text-2xl text-primary my-4">
-                <Link href={portfolioDetail.server} rel="noreferrer" target="_blank">
-                  Server Code
-                </Link>
+                {portfolioDetail.server && (
+                  <Link href={portfolioDetail.server} rel="noreferrer" target="_blank">
+                    Server Code
+                  </Link>
+                )}
               </h2>
             </div>
             <h2 className="font-semibold text-2xl text-white my-3">Use Technology:</h2>

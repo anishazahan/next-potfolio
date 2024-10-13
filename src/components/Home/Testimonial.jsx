@@ -11,8 +11,8 @@ const data = [
   {
     name: "Sulesh Lehera",
     review:
-      " Proficient in translating design concepts into responsive and visually appealing websites that deliver seamless user experiences.",
-    loction: "Pakistan",
+      "Exceptionally skilled frontend developer who excels in creating intuitive and responsive user interfaces. Her attention to detail and ability to seamlessly integrate modern web technologies into projects truly sets her apart.",
+    location: "Pakistan",
     img: img3,
   },
   {
@@ -33,8 +33,8 @@ const data = [
   {
     name: "Shivay Dey",
     review:
-      " Proficient in translating design concepts into responsive and visually appealing websites that deliver seamless user experiences.",
-    loction: "India",
+      "Anisha's has a deep understanding of frontend frameworks and design principles. Her ability to bring complex design concepts to life while maintaining top-notch performance makes her an asset to any development team.",
+    location: "India",
     img: img4,
   },
 ];

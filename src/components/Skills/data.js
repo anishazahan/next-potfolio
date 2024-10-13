@@ -48,3 +48,21 @@ export const data = [
     img: ts,
   },
 ];
+
+export const skillData = [
+  {
+    id: 6,
+    title: "React Js",
+    img: react,
+  },
+  {
+    id: 7,
+    title: "Redux",
+    img: redux,
+  },
+  {
+    id: 8,
+    title: "Typescript",
+    img: ts,
+  },
+];

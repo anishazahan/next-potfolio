@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { data } from "./data.js";
+import { data } from "./data";
 
 const Projects = () => {
   const [selectedType, setSelectedType] = useState("Frontend"); // Default selected type
@@ -9,7 +9,7 @@ const Projects = () => {
   const filteredProjects = data?.filter((item) => item.type === selectedType);
   const [showAllProjects, setShowAllProjects] = useState(false);
 
-  const displayedProjects = showAllProjects ? filteredProjects : filteredProjects.slice(0, 6); // Show up to 6 projects initially
+  const displayedProjects = showAllProjects ? filteredProjects : filteredProjects.slice(0, 6);
 
   const toggleShowAll = () => {
     setShowAllProjects(!showAllProjects);
@@ -57,7 +57,7 @@ const Projects = () => {
 
         <div className="flex justify-end pr-5 mt-16">
           <button className="dark:text-gray-200 font-bold" onClick={toggleShowAll}>
-            {showAllProjects ? "See Less..." : "See More..."}
+            {selectedType !== "Frontend" ? "" : showAllProjects ? "See Less..." : "See More..."}
           </button>
         </div>
       </div>

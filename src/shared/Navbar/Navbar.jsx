@@ -4,7 +4,6 @@ import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-import { useSession } from "next-auth/react";
 import Image from "next/image";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import darkLogo from "../../assets/img/Group 381.png";
@@ -13,7 +12,6 @@ import Banner from "../../components/Home/HomeBanner";
 const Navbar = () => {
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { data: session } = useSession();
 
   // ....  theme .........
   const { theme, setTheme } = useTheme();
