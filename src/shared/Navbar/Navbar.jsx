@@ -20,7 +20,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setTheme("dark");
-  }, []);
+  }, [setTheme]);
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
