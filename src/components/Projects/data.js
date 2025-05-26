@@ -76,7 +76,7 @@ export const data = [
       "moment",
       "and other",
     ],
-    live: "https://multivendor-ecommerce-frontend-git-main-anishazahan.vercel.app/",
+    live: "https://multivendor-ecommerce-frontend.onrender.com/",
     code: "https://github.com/anishazahan/Multivendor-ecommerce-frontend",
     server: "https://github.com/anishazahan/multivendor-ecommerce-backend",
     type: "Fullstack",

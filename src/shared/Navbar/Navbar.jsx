@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import darkLogo from "../../assets/img/Group 381.png";
 import Banner from "../../components/Home/HomeBanner";
@@ -12,6 +13,7 @@ import Banner from "../../components/Home/HomeBanner";
 const Navbar = () => {
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   // ....  theme .........
   const { theme, setTheme } = useTheme();
@@ -96,44 +98,6 @@ const Navbar = () => {
                 Contact Me
               </Link>
             </div>
-            {/* <div className="flex space-x-3 items-center">
-            {session ? (
-              <Link
-                href="/"
-                className="flex items-center space-x-2 px-6 py-3 hover:text-white rounded-sm bg-black  "
-              >
-                <button
-                  onClick={() => signOut()}
-                  className="font-medium text-white hover:text-white"
-                >
-                  logout
-                </button>
-              
-              </Link>
-            ) : (
-              <Link
-                href="/"
-                className="flex items-center space-x-2 px-6 py-3 hover:text-white rounded-sm bg-gray-200  "
-              >
-                <button className="font-medium text-black hover:text-white">
-                  Signin
-                </button>
-               
-              </Link>
-            )}
-
-            <div className="">
-              {session ? (
-                <Link className="text-white" href="admin">
-                  {session.user.name}
-                </Link>
-              ) : (
-                <Link className="text-white" href="/admin">
-                  Admin
-                </Link>
-              )}
-            </div>
-          </div> */}
 
             <div className="lg:hidden flex space-x-3 items-center">
               <label className="swap swap-rotate px-4 md:px-6 py-1 rounded-full bg-gray-700 dark:bg-gray-700">
@@ -235,7 +199,7 @@ const Navbar = () => {
           </div>
         )}
 
-        <Banner></Banner>
+        {pathname === "/" && <Banner />}
       </div>
     </div>
   );
